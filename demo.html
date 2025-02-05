@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h1>HD-EPIC: A Highly-Detailed Egocentric Video Dataset</h1>
 <style>
   #video-grid {
     display: grid;
@@ -15,6 +14,23 @@
     height: 0;
     padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust if needed) */
     position: relative;
+  }
+    
+      .container {
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+  }
+
+  .container h1 {
+    margin-left: 10px; /* Adds some space between image and title */
+        flex: 1; /* Allow the h1 to take up available space and wrap */
+  word-wrap: break-word; /* Ensures long words wrap too */
+  }
+
+  .container img {
+    max-height: 120px; /* Adjust as needed */
+    width: auto;  /* Maintain aspect ratio */
+    vertical-align: middle; /* Alternative vertical alignment */
   }
 
   .video-container iframe {
@@ -73,16 +89,11 @@
 </style>
 </head>
 <body>
+    <div class="container"><img src="./assets/img/logo-white.png" width="160"/><h1>HD-EPIC: A Highly-Detailed Egocentric Video Dataset (<a href="http://hd-epic.github.io/" target="_blank">Project Page</a> | <a href="">ArXiv</a>)</h1></div>
 
 <div id="instructions">
-  <h2>How to Use This Page</h2>
-  <p><strong>View Clips:</strong> The page initially loads randomly sampled 10s clips from our long videos</p>
-  <p><strong>Load More Clips:</strong> Click the <strong>"Another Sample of Clips"</strong> button at the bottom of the screen to load a new set of six clips.</p>
-  <p><strong>Links:</strong>
-    <a href="http://hd-epic.github.io/" target="_blank">HD-EPIC Dataset Page</a> 
-    <a href="http://hd-epic.github.io/" target="_blank">ArXiv</a>
-  </p>
-</div>
+  <h3>Explore random 10s clips from our long videos (Click for another sample)</h3>
+  </div>
 
 <div id="video-grid"></div>
 
