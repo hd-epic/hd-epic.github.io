@@ -92,90 +92,631 @@
 
 <script>
   const videos = [
-    { id: "YZo1sqXp5U0", duration: 396 }, // Example: 120 seconds
-    { id: "iJpqrt4Uefc", duration: 327 }, // Example: 180 seconds
-    { id: "I3ldXPd_d2g", duration: 120 },  // Example: 90 seconds
-    { id: "Q_h1jmcIBAw", duration: 120 },
-    { id: "Epjp1Isub4Q", duration: 120 },
-    { id: "1faxLHsp5ZI", duration: 120 },
-    { id: "Do_CbEBOFro", duration: 120 },
-    { id: "ozyqTW4FLFQ", duration: 120 },
-    { id: "x4STmay8sKI", duration: 120 },
-    { id: "HdDyqiLzT6g", duration: 120 },
-    { id: "PenWS6LTzDU", duration: 120 },
-    { id: "xR7ypKh8GUg", duration: 120 },
-    { id: "pgKE1TA8yKM", duration: 120 },
-    { id: "_iElNa-jFDE", duration: 120 },
-    { id: "kRWcAuVKtqc", duration: 120 },
-    { id: "wC7ZmDtzrl4", duration: 120 },
-    { id: "5nW8ksVP5yE", duration: 120 },
-    { id: "VFn2ir7RtAw", duration: 120 },
-    { id: "rSLV5Qx9l9s", duration: 120 },
-    { id: "ora_fTZr00A", duration: 120 },
-    { id: "7JqcpAM4EXU", duration: 120 },
-    { id: "1PDw8lZvUpY", duration: 120 },
-    { id: "06EGRDGFB64", duration: 120 },
-    { id: "09xxxPUCdUc", duration: 120 },
-    { id: "dVGiDRrddg4", duration: 120 },
-    { id: "0wakJgxehI4", duration: 120 },
-    { id: "qtPElCGYMHo", duration: 120 },
-    { id: "ClT-r2qMfDQ", duration: 120 },
-    { id: "QLMFiW0bm1Q", duration: 120 },
-    { id: "UYaRHCakTsU", duration: 120 },
-    { id: "DExH8Rq-bsk", duration: 120 },
-    { id: "8CgNOtu6rPA", duration: 120 },
-    { id: "aAbljb1FnWY", duration: 120 },
-    { id: "DuFatpo2zck", duration: 120 },
-    { id: "d6cer_Y681U", duration: 120 },
-    { id: "TS3XE9sALg8", duration: 120 },
-    { id: "EMGDuShuAaw", duration: 120 },
-    { id: "jlYpItmfW3k", duration: 120 },
-    { id: "RJK891ZzCIk", duration: 120 },
-    { id: "zWO833eWfag", duration: 120 },
-    { id: "UsXtkADcLW4", duration: 120 },
-    { id: "leeb_8o8mhk", duration: 120 },
-    { id: "bwDkI2vZ1Ow", duration: 120 },
-    { id: "-nTu0lrK7lg", duration: 120 },
-    { id: "MfVeyV6KHxM", duration: 120 },
-    { id: "cP3Ze_zk4jo", duration: 120 },
-    { id: "3VDExSVPRAM", duration: 120 },
-    { id: "xwD05cqaNI8", duration: 120 },
-    { id: "oF0kZUetsIc", duration: 120 },
-    { id: "ksIwSq7DgNk", duration: 120 },
-    { id: "MgEbPOsjl44", duration: 120 },
-    { id: "Wvm4Iti3HFg", duration: 120 },
-    { id: "uIFJOM3to-c", duration: 120 },
-    { id: "IGngQdnA7VM", duration: 120 },
-    { id: "OxlVOKg9L10", duration: 120 },
-    { id: "MtANW-VHeLc", duration: 120 },
-    { id: "NOsHm-8Kfe4", duration: 120 },
-    { id: "9EVtt2kjg-Y", duration: 120 },
-    { id: "dPv24tndzU4", duration: 120 },
-    { id: "_Oc6EP5-580", duration: 120 },
-    { id: "b6D-Jx7FSBI", duration: 120 },
-    { id: "raivW3uuNC8", duration: 120 },
-    { id: "MlPOnlO7RaM", duration: 120 },
-    { id: "MBRufovHQi8", duration: 120 },
-    { id: "I6tkXpYhVdY", duration: 120 },
-    { id: "lGKJgPs-Pjk", duration: 120 },
-    { id: "za_p9bd_Vkg", duration: 120 },
-    { id: "5BkqfOu30Ec", duration: 120 },
-    { id: "eeCKS_CzKzc", duration: 120 },
-    { id: "AS5nT9yMtbo", duration: 120 },
-    { id: "bk35JWOogGg", duration: 120 },
-    { id: "JwoPd_13Lko", duration: 120 },
-    { id: "Xvikr2gIsC4", duration: 120 },
-    { id: "kZTn1gaSf_0", duration: 120 },
-    { id: "hFzaq4tOR0Q", duration: 120 },
-    { id: "uZF5dt4hptU", duration: 120 },
-    { id: "yJBUr83vtX0", duration: 120 },
-    { id: "S7CG5gIxS5s", duration: 120 },
-    { id: "LWMOGzdnZGQ", duration: 120 },
-    { id: "0mviwgLRV5o", duration: 120 },
-    { id: "8PS08A42K9Q", duration: 120 },
-    { id: "3MjTHAjHO4E", duration: 120 },
-    { id: "8otKXM5Kj-k", duration: 120 }
-  ];
+    {
+        "id": "YZo1sqXp5U0",
+        "duration": 396
+    },
+    {
+        "id": "iJpqrt4Uefc",
+        "duration": 328
+    },
+    {
+        "id": "I3ldXPd_d2g",
+        "duration": 770
+    },
+    {
+        "id": "Q_h1jmcIBAw",
+        "duration": 513
+    },
+    {
+        "id": "Epjp1Isub4Q",
+        "duration": 202
+    },
+    {
+        "id": "1faxLHsp5ZI",
+        "duration": 537
+    },
+    {
+        "id": "Do_CbEBOFro",
+        "duration": 173
+    },
+    {
+        "id": "ozyqTW4FLFQ",
+        "duration": 473
+    },
+    {
+        "id": "x4STmay8sKI",
+        "duration": 1754
+    },
+    {
+        "id": "HdDyqiLzT6g",
+        "duration": 829
+    },
+    {
+        "id": "PenWS6LTzDU",
+        "duration": 1125
+    },
+    {
+        "id": "xR7ypKh8GUg",
+        "duration": 2520
+    },
+    {
+        "id": "pgKE1TA8yKM",
+        "duration": 709
+    },
+    {
+        "id": "_iElNa-jFDE",
+        "duration": 140
+    },
+    {
+        "id": "kRWcAuVKtqc",
+        "duration": 176
+    },
+    {
+        "id": "wC7ZmDtzrl4",
+        "duration": 241
+    },
+    {
+        "id": "5nW8ksVP5yE",
+        "duration": 53
+    },
+    {
+        "id": "VFn2ir7RtAw",
+        "duration": 1329
+    },
+    {
+        "id": "rSLV5Qx9l9s",
+        "duration": 166
+    },
+    {
+        "id": "ora_fTZr00A",
+        "duration": 235
+    },
+    {
+        "id": "7JqcpAM4EXU",
+        "duration": 1526
+    },
+    {
+        "id": "1PDw8lZvUpY",
+        "duration": 89
+    },
+    {
+        "id": "06EGRDGFB64",
+        "duration": 509
+    },
+    {
+        "id": "09xxxPUCdUc",
+        "duration": 1860
+    },
+    {
+        "id": "dVGiDRrddg4",
+        "duration": 1089
+    },
+    {
+        "id": "0wakJgxehI4",
+        "duration": 446
+    },
+    {
+        "id": "qtPElCGYMHo",
+        "duration": 133
+    },
+    {
+        "id": "ClT-r2qMfDQ",
+        "duration": 1788
+    },
+    {
+        "id": "QLMFiW0bm1Q",
+        "duration": 924
+    },
+    {
+        "id": "UYaRHCakTsU",
+        "duration": 32
+    },
+    {
+        "id": "DExH8Rq-bsk",
+        "duration": 46
+    },
+    {
+        "id": "8CgNOtu6rPA",
+        "duration": 215
+    },
+    {
+        "id": "aAbljb1FnWY",
+        "duration": 10
+    },
+    {
+        "id": "DuFatpo2zck",
+        "duration": 815
+    },
+    {
+        "id": "d6cer_Y681U",
+        "duration": 539
+    },
+    {
+        "id": "TS3XE9sALg8",
+        "duration": 225
+    },
+    {
+        "id": "EMGDuShuAaw",
+        "duration": 48
+    },
+    {
+        "id": "jlYpItmfW3k",
+        "duration": 350
+    },
+    {
+        "id": "RJK891ZzCIk",
+        "duration": 322
+    },
+    {
+        "id": "zWO833eWfag",
+        "duration": 271
+    },
+    {
+        "id": "UsXtkADcLW4",
+        "duration": 2268
+    },
+    {
+        "id": "leeb_8o8mhk",
+        "duration": 649
+    },
+    {
+        "id": "bwDkI2vZ1Ow",
+        "duration": 3116
+    },
+    {
+        "id": "-nTu0lrK7lg",
+        "duration": 1511
+    },
+    {
+        "id": "MfVeyV6KHxM",
+        "duration": 1936
+    },
+    {
+        "id": "cP3Ze_zk4jo",
+        "duration": 1418
+    },
+    {
+        "id": "3VDExSVPRAM",
+        "duration": 1064
+    },
+    {
+        "id": "xwD05cqaNI8",
+        "duration": 498
+    },
+    {
+        "id": "oF0kZUetsIc",
+        "duration": 4485
+    },
+    {
+        "id": "ksIwSq7DgNk",
+        "duration": 1463
+    },
+    {
+        "id": "MgEbPOsjl44",
+        "duration": 154
+    },
+    {
+        "id": "Wvm4Iti3HFg",
+        "duration": 945
+    },
+    {
+        "id": "uIFJOM3to-c",
+        "duration": 161
+    },
+    {
+        "id": "IGngQdnA7VM",
+        "duration": 306
+    },
+    {
+        "id": "OxlVOKg9L10",
+        "duration": 129
+    },
+    {
+        "id": "MtANW-VHeLc",
+        "duration": 3279
+    },
+    {
+        "id": "NOsHm-8Kfe4",
+        "duration": 911
+    },
+    {
+        "id": "9EVtt2kjg-Y",
+        "duration": 152
+    },
+    {
+        "id": "dPv24tndzU4",
+        "duration": 3379
+    },
+    {
+        "id": "_Oc6EP5-580",
+        "duration": 185
+    },
+    {
+        "id": "b6D-Jx7FSBI",
+        "duration": 1239
+    },
+    {
+        "id": "raivW3uuNC8",
+        "duration": 1025
+    },
+    {
+        "id": "MlPOnlO7RaM",
+        "duration": 297
+    },
+    {
+        "id": "MBRufovHQi8",
+        "duration": 1126
+    },
+    {
+        "id": "I6tkXpYhVdY",
+        "duration": 876
+    },
+    {
+        "id": "lGKJgPs-Pjk",
+        "duration": 3232
+    },
+    {
+        "id": "za_p9bd_Vkg",
+        "duration": 846
+    },
+    {
+        "id": "5BkqfOu30Ec",
+        "duration": 1449
+    },
+    {
+        "id": "eeCKS_CzKzc",
+        "duration": 1233
+    },
+    {
+        "id": "AS5nT9yMtbo",
+        "duration": 1249
+    },
+    {
+        "id": "bk35JWOogGg",
+        "duration": 257
+    },
+    {
+        "id": "JwoPd_13Lko",
+        "duration": 1610
+    },
+    {
+        "id": "Xvikr2gIsC4",
+        "duration": 1277
+    },
+    {
+        "id": "kZTn1gaSf_0",
+        "duration": 182
+    },
+    {
+        "id": "hFzaq4tOR0Q",
+        "duration": 1161
+    },
+    {
+        "id": "uZF5dt4hptU",
+        "duration": 318
+    },
+    {
+        "id": "yJBUr83vtX0",
+        "duration": 561
+    },
+    {
+        "id": "S7CG5gIxS5s",
+        "duration": 883
+    },
+    {
+        "id": "LWMOGzdnZGQ",
+        "duration": 119
+    },
+    {
+        "id": "0mviwgLRV5o",
+        "duration": 942
+    },
+    {
+        "id": "8PS08A42K9Q",
+        "duration": 566
+    },
+    {
+        "id": "3MjTHAjHO4E",
+        "duration": 1248
+    },
+    {
+        "id": "8otKXM5Kj-k",
+        "duration": 918
+    },
+    {
+        "id": "q2FOi2zBRGI",
+        "duration": 1613
+    },
+    {
+        "id": "_3uENcOu0Wg",
+        "duration": 1038
+    },
+    {
+        "id": "-bfqvpDPins",
+        "duration": 1170
+    },
+    {
+        "id": "m7dB1IQPF3s",
+        "duration": 346
+    },
+    {
+        "id": "XkMuNjbOipg",
+        "duration": 102
+    },
+    {
+        "id": "zGcwmFLaS1E",
+        "duration": 1172
+    },
+    {
+        "id": "-ZVsnskCGbI",
+        "duration": 39
+    },
+    {
+        "id": "pcwo46NyzzY",
+        "duration": 279
+    },
+    {
+        "id": "zcsyxpzE-yY",
+        "duration": 162
+    },
+    {
+        "id": "nOkttredqtQ",
+        "duration": 296
+    },
+    {
+        "id": "2XYaMEcHKpE",
+        "duration": 37
+    },
+    {
+        "id": "0LTgW-QWuiY",
+        "duration": 1313
+    },
+    {
+        "id": "Au5WmQ9wQis",
+        "duration": 534
+    },
+    {
+        "id": "89k2h5npErg",
+        "duration": 304
+    },
+    {
+        "id": "V_SnJ2-AcP0",
+        "duration": 197
+    },
+    {
+        "id": "0NPJp542W2I",
+        "duration": 225
+    },
+    {
+        "id": "tNThxcw9T9w",
+        "duration": 28
+    },
+    {
+        "id": "eMeXg-8DVvQ",
+        "duration": 1069
+    },
+    {
+        "id": "XUpcsJO03YE",
+        "duration": 642
+    },
+    {
+        "id": "EC8u03v6iQM",
+        "duration": 242
+    },
+    {
+        "id": "OkF3oJZmVZ8",
+        "duration": 1630
+    },
+    {
+        "id": "YbJ_AKPGnJM",
+        "duration": 433
+    },
+    {
+        "id": "fmCmCWxgw28",
+        "duration": 113
+    },
+    {
+        "id": "r2WbnQj3Klg",
+        "duration": 99
+    },
+    {
+        "id": "ne67bnDFy0E",
+        "duration": 1253
+    },
+    {
+        "id": "2yMGlZU2r0E",
+        "duration": 427
+    },
+    {
+        "id": "K5BHJ6f0rXU",
+        "duration": 185
+    },
+    {
+        "id": "nKtVMp7TW2g",
+        "duration": 127
+    },
+    {
+        "id": "fySE6P-hiOg",
+        "duration": 2016
+    },
+    {
+        "id": "3GWSDWfUoQ0",
+        "duration": 200
+    },
+    {
+        "id": "1MthVWI-HDc",
+        "duration": 1464
+    },
+    {
+        "id": "gmvnmxz0fvg",
+        "duration": 3169
+    },
+    {
+        "id": "YrwLEsYui6M",
+        "duration": 1113
+    },
+    {
+        "id": "MvGcZj_3VvI",
+        "duration": 1188
+    },
+    {
+        "id": "Rs8SozeRBSU",
+        "duration": 434
+    },
+    {
+        "id": "xVpNL5CQtHg",
+        "duration": 1857
+    },
+    {
+        "id": "CfD8JwSTawk",
+        "duration": 2533
+    },
+    {
+        "id": "dRhC716vd68",
+        "duration": 634
+    },
+    {
+        "id": "XHjyMr158_I",
+        "duration": 123
+    },
+    {
+        "id": "iCfzOA1RaLU",
+        "duration": 932
+    },
+    {
+        "id": "8-xn8-xsllQ",
+        "duration": 608
+    },
+    {
+        "id": "Rnmf09yzNAE",
+        "duration": 1064
+    },
+    {
+        "id": "ye9LXg30G7w",
+        "duration": 1911
+    },
+    {
+        "id": "5X7RFVul2uo",
+        "duration": 1702
+    },
+    {
+        "id": "a6wcjtATIeU",
+        "duration": 2097
+    },
+    {
+        "id": "KMBj0Sq7vZg",
+        "duration": 159
+    },
+    {
+        "id": "zInGsEULHX8",
+        "duration": 2579
+    },
+    {
+        "id": "1qeKWyfu3qQ",
+        "duration": 1884
+    },
+    {
+        "id": "50cGIL39mDk",
+        "duration": 199
+    },
+    {
+        "id": "F4MzdUd6ClM",
+        "duration": 1012
+    },
+    {
+        "id": "SzNR3vEJAYE",
+        "duration": 1088
+    },
+    {
+        "id": "lDstsmGmrlM",
+        "duration": 1224
+    },
+    {
+        "id": "pI1xR81gZz0",
+        "duration": 158
+    },
+    {
+        "id": "e397Y4grt1k",
+        "duration": 1009
+    },
+    {
+        "id": "OstYPS-rZ9g",
+        "duration": 1994
+    },
+    {
+        "id": "_OfP5Ypq4XQ",
+        "duration": 1873
+    },
+    {
+        "id": "Vf1pbMbVkYA",
+        "duration": 1978
+    },
+    {
+        "id": "_EA6wUp1S-M",
+        "duration": 1185
+    },
+    {
+        "id": "k6_z-Lvxytk",
+        "duration": 1691
+    },
+    {
+        "id": "sE68I_7B1sw",
+        "duration": 1119
+    },
+    {
+        "id": "UpLFLWsfzaM",
+        "duration": 2960
+    },
+    {
+        "id": "esvILIGB-_g",
+        "duration": 1020
+    },
+    {
+        "id": "it6f1pYx9s4",
+        "duration": 2499
+    },
+    {
+        "id": "BnlhxK1FUY8",
+        "duration": 1066
+    },
+    {
+        "id": "sEXzejsaR88",
+        "duration": 1058
+    },
+    {
+        "id": "DiZu60NkEYk",
+        "duration": 377
+    },
+    {
+        "id": "8PA9Kdaujm4",
+        "duration": 3640
+    },
+    {
+        "id": "pDG6tW3tA0o",
+        "duration": 253
+    },
+    {
+        "id": "Rj1oxJgsxYs",
+        "duration": 300
+    },
+    {
+        "id": "CkvdwVh60Pk",
+        "duration": 35
+    },
+    {
+        "id": "ooIy3_vTXKw",
+        "duration": 2156
+    },
+    {
+        "id": "OhTeD0DY6q4",
+        "duration": 1420
+    },
+    {
+        "id": "GOktVMb9pzY",
+        "duration": 161
+    }
+];
 
   const gridContainer = document.getElementById("video-grid");
   const numCycles = 5; // Number of times to change videos
