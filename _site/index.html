@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.2.1 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HD-EPIC: A Highly-Detailed Egocentric Video Dataset | HD-EPIC</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="HD-EPIC: A Highly-Detailed Egocentric Video Dataset" />
+<meta name="author" content="<firstname> <lastname>" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A Highly-Detailed Egocentric Video Dataset" />
+<meta property="og:description" content="A Highly-Detailed Egocentric Video Dataset" />
+<link rel="canonical" href="http://localhost:8003/" />
+<meta property="og:url" content="http://localhost:8003/" />
+<meta property="og:site_name" content="HD-EPIC" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HD-EPIC: A Highly-Detailed Egocentric Video Dataset" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"<firstname> <lastname>"},"dateModified":"2025-02-05T12:33:44+00:00","description":"A Highly-Detailed Egocentric Video Dataset","headline":"HD-EPIC: A Highly-Detailed Egocentric Video Dataset","name":"HD-EPIC","url":"http://localhost:8003/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="color-scheme" content="light">
+
+
+
+  <meta name="theme-color" content="rgb(45,44,45)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HD-EPIC">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="HD-EPIC">
+
+<meta name="generator" content="Hydejack v9.2.1" />
+
+
+<link rel="alternate" href="http://localhost:8003/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:8003/feed.xml" title="HD-EPIC" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+  
+  <link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css" id="_katexPreload">
+  <noscript><link rel="stylesheet" href="/assets/bower_components/katex/dist/katex.min.css"></noscript>
+
+
+
+
+
+<script>((r,a)=>{function d(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=a.createElement("script"),e=(n.src=e,t&&d(n,"load",t,{once:!0}),a.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=a.createElement("script");function o(){r._loaded=!0,t&&d(n,"load",t,{once:!0});var e=a.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():d(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){d(a.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}})(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2025-02-05T12:58:18+00:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.2.1.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(237,50,62);--accent-color-faded: rgba(237, 50, 62, 0.5);--accent-color-highlight: rgba(237, 50, 62, 0.1);--accent-color-darkened: rgb(228.6715246637, 20.0784753363, 33.4641255605);--theme-color: rgb(45,44,45);--dark-mode-body-bg: hsl(300, 0.1404494382%, 17.5%);--dark-mode-border-color: hsl(300, 0.1404494382%, 22.5%)}
+</style>
+
+
+<!--<![endif]-->
+
+
+<!-- Add HTML tags here to be included in the head. You can delete the below: -->
+<link rel="dns-prefetch" href="https://assets.gumroad.com">
+<script type="module">
+  const loadJS = x => new Promise(r => window.loadJS(x).addEventListener('load', r));
+
+  let p1, p2, io1, io2, embedCreated, overlayCreated;
+  document.querySelector('hy-push-state').addEventListener('load', () => {
+    io1 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p1 = p1 || loadJS('https://gumroad.com/js/gumroad-embed.js');
+        await p1;
+        !embedCreated && await new Promise(function check1(res) {
+          if (typeof createGumroadEmbed !== 'undefined')  {
+            embedCreated = 1;
+            res(createGumroadEmbed());
+          }
+          else setTimeout(() => check1(res), 200);
+        });
+        await new Promise(function check2(res) {
+          if (typeof GumroadEmbed !== 'undefined') res(GumroadEmbed.reload());
+          else setTimeout(() => check2(res), 200);
+        });
+      }
+    }, { rootMargin: '1440px' });
+
+    io2 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p2 = p2 || loadJS('https://gumroad.com/js/gumroad.js');
+        await p2;
+        !overlayCreated && await new Promise(function check(res) {
+          if (typeof createGumroadOverlay !== 'undefined') {
+            overlayCreated = 1;
+            res(createGumroadOverlay());
+          }
+          else setTimeout(() => check(res), 200);
+        });
+      }
+    }, { rootMargin: '300px' });
+
+    document.querySelectorAll('.gumroad-product-embed').forEach(el => io1.observe(el));
+    document.querySelectorAll('.gumroad-button').forEach(el => io2.observe(el));
+  });
+</script>
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  <hy-drawer
+  id="_drawer"
+  class="cover"
+  side="left"
+  threshold="10"
+  noscroll
+  opened
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(45,44,45);background-image:url(/assets/img/opening.gif)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">HD-EPIC</h2></a>
+    
+    
+      <p class="">
+        A Highly-Detailed Egocentric Video Dataset
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/index#vqa-benchmark"
+          class="sidebar-nav-item "
+          
+        >
+          VQA benchmark
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/index#download"
+          class="sidebar-nav-item "
+          
+        >
+          Download
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/index#team"
+          class="sidebar-nav-item "
+          
+        >
+          Team
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+    
+
+    
+    
+
+    
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-plain"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+  <article class="page mb6" role="article">
+  <header>
+    <h1 class="page-title">HD-EPIC: A Highly-Detailed Egocentric Video Dataset</h1>
+    
+
+
+
+  <div class="hr pb0"></div>
+
+
+  </header>
+
+  <p><img src="/assets/img/opening_loop_cropped.gif" alt="Full-width image" class="lead" width="1020" loading="lazy" />
+<!-- ![Full-width image](/assets/img/dataset/f1.jpg){:.lead width="1020" loading="lazy"} --></p>
+
+<!-- We introduce **HD-EPIC**, a **validation dataset** of newly collected, unscripted **kitchen-based egocentric videos** with **detailed 3D-grounded annotations**, covering:
+
+- **Recipe steps**  
+- **Fine-grained actions**  
+- **Ingredients with nutritional values**  
+- **Object movements**  
+- **Audio events**  
+
+### Key Features
+- **In-the-Wild Collection**: Unscripted recordings from **9 diverse home kitchens**.  
+- **Rich Annotations**: Matches the detail of controlled lab datasets.  
+- **Digital Twins**: 3D scene grounding of fixtures, object locations, and gaze.  
+
+<br>
+
+![Full-width image](/assets/img/dataset/f1.jpg){:.lead width="1020" loading="lazy"}
+
+### Dataset Statistics
+- **41 hours** of video across **9 kitchens**  
+- **404** digitally twinned kitchen fixtures  
+- **69** recipes  
+- **59K** fine-grained actions  
+- **51K** audio events  
+- **20K** object movements  
+- **37K** object masks (3D-lifted)  
+- **263 annotations per minute** on average   -->
+
+<p class="figcaption"><img src="/assets/img/dataset/diversity.png" alt="Full-width image" class="lead" width="1020" loading="lazy" />
+Diversity in HD-EPIC, which is filmed over 3 days in-the-wild, resulting in many objects, activities and recipes.</p>
+
+<h2 id="recipe-steps-and-ingredients">Recipe steps and ingredients</h2>
+
+<p class="figcaption"><img src="/assets/img/dataset/prep_stepv5.jpg" alt="Full-width image" class="lead" width="1020" loading="lazy" />
+For the “Carbonara” recipe, we visualise the prep and step time segments for three consecutive steps (left), along with sample frames with corresponding action narrations (top). The interleaving of different preps/steps is evident in the annotations</p>
+
+<p>Unlike typical <strong>short recipe videos</strong>, which are <strong>trimmed, edited, or sped up</strong>, HD-EPIC captures a <strong>broader range of real-world cooking activities</strong>, including:</p>
+
+<ul>
+  <li><strong>Fetching ingredients</strong></li>
+  <li><strong>Prepping ingredients</strong></li>
+  <li><strong>Weighing &amp; adding ingredients</strong> (for full nutritional tracking)</li>
+</ul>
+
+<p>To fully capture recipes, we introduce:</p>
+<ul>
+  <li><strong>Prep &amp; Step Pairs</strong>: Detailed segmentation of preparation and execution.</li>
+  <li><strong>Temporal Ingredient Tracking</strong>: Enables monitoring of nutrition as ingredients are added.</li>
+</ul>
+
+<h2 id="fine-grained-actions">Fine-grained actions</h2>
+
+<p><img src="/assets/img/dataset/verb_noun_distribution4.png" alt="Full-width image" class="lead" width="1020" loading="lazy" /></p>
+
+<p class="figcaption">Frequency of verb clusters (top) and noun clusters (bottom) in narrated sentences by category, shown on a logarithmic scale.</p>
+
+<ul>
+  <li>
+    <p><strong>Transcriptions</strong>: We automatically transcribe and manually check and correct all audio narrations provided by participants, to obtain detailed action descriptions.</p>
+  </li>
+  <li>
+    <p><strong>Action boundaries</strong>: For all narrations, we label precise start and end times. In total, we obtain segments for 59,454 actions, with a mean duration of 2.0s (±3.4s).</p>
+  </li>
+  <li>
+    <p><strong>Parsing and clustering</strong>: We parse verbs, nouns, and hands from open vocabulary narrations so they can be used for closed vocabulary tasks, such as action recognition. We also extract how and why clauses from 16,004 and 11,540 narrations, respectively. For example:</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Turn the salt container clockwise by pushing it with my left hand so that the lid is aligned with the container opening.</p>
+</blockquote>
+
+<ul>
+  <li><strong>Sound annotations</strong>: We collect audio annotations. These capture start-end times of audio events along with a class name (e.g. “click”, “rustle”, “metal-plastic collision”, “running water”). Overall, we have 50,968 audio annotations from 44 classes.</li>
+</ul>
+
+<h2 id="digital-twin-scene--object-movements">Digital twin: Scene &amp; Object Movements</h2>
+
+<!-- ![image](/assets/img/dataset/blender.jpg){:.lead width="125" loading="lazy"} -->
+<!-- <img src="/assets/img/dataset/blender.jpg" alt="image" width="960" loading="lazy"> -->
+<p><img src="/assets/img/dataset/blender.jpg" alt="image" width="800" loading="lazy" style="display: block; margin: auto; max-width: 100%; height: auto;" /></p>
+
+<p class="figcaption">Digital Twin: from point cloud (left), to surfaces (middle) and labelled fixtures (right). We show two moved objects (masks on top) at fixtures: cheese and pan.</p>
+
+<p>We reconstruct <strong>digital copies of participants’ kitchens</strong>, manually curating:</p>
+
+<ul>
+  <li><strong>Surfaces</strong></li>
+  <li><strong>Fixtures</strong> (e.g., cupboards, drawers)</li>
+  <li><strong>Storage spaces</strong> (e.g., shelves, hooks)</li>
+  <li><strong>Large appliances</strong> (e.g., fridge, microwave)</li>
+</ul>
+
+<!-- ### Key Differences   -->
+<p>Unlike digital twins based on <strong>predefined replicas</strong>, our reconstructions are <strong>built from real environments</strong> using:</p>
+
+<ul>
+  <li><strong>Multi-video SLAM point clouds</strong> from recordings</li>
+  <li><strong>Manual curation in <a href="https://www.blender.org/">Blender</a></strong></li>
+</ul>
+
+<h3 id="scene">Scene</h3>
+
+<p><img src="/assets/img/dataset/all_fixtures.jpg" alt="Full-width image" class="lead" width="1020" loading="lazy" /></p>
+
+<p class="figcaption">All kitchens with their fixture annotations (coloured randomly).</p>
+
+<p>Each kitchen contains an average of <strong>44.9 labeled fixtures</strong> (<em>min: 32, max: 58</em>):</p>
+<ul>
+  <li><strong>11.1</strong> counters/surfaces</li>
+  <li><strong>11.8</strong> cupboards</li>
+  <li><strong>7.7</strong> drawers</li>
+  <li><strong>3.3</strong> appliances</li>
+</ul>
+
+<p>We also <strong>associate narrations</strong> with annotated fixtures to describe scene interactions.</p>
+
+<p><strong>Hand Mask Annotations</strong>:
+We annotate <strong>a subset of frames per video</strong> for <strong>both hands</strong>, ensuring coverage across:  <strong>Various actions</strong> and <strong>Different kitchen locations</strong>.
+Segmentation Process is <strong>automatic</strong> with manual correction for a selected subset. We have <strong>7.7M total hand masks</strong> in total.</p>
+
+<h3 id="3d-object-movement-annotations">3D Object Movement Annotations</h3>
+
+<p>We annotate <strong>object movements</strong> by labeling <strong>Temporal segments</strong> from pick-up to placement and <strong>2D bounding boxes</strong> at movement onset and end. Tracks include <strong>even slight shifts/pushes</strong>, ensuring full coverage of movements. <strong>Every object movement is annotated</strong>, providing a rich dataset for analysis.</p>
+
+<p><strong>Statistics</strong>:<br /></p>
+<ul>
+  <li><strong>19.9K object movement tracks</strong></li>
+  <li><strong>36.9K bounding boxes</strong></li>
+  <li><strong>9.2 objects taken per minute</strong> <em>(on average)</em></li>
+  <li><strong>9.0 objects placed per minute</strong> <em>(on average)</em></li>
+  <li><strong>Average track length</strong>: <strong>9.0s</strong> <em>(max: 461.5s)</em></li>
+</ul>
+
+<p><strong>Object Masks</strong>:
+We generate <strong>pixel-level segmentations</strong> from each bounding box by <strong>Initializing with iterative <a href="https://github.com/facebookresearch/sam2">SAM2</a></strong> and <strong>Manually correcting the masks</strong>. During this process, <strong>74% of masks</strong> were manually corrected and <strong>IoU between SAM2 and manual masks</strong>: <strong>0.82</strong>. Finally, We lift object masks to 3D using dense depth estimates and 2D-to-3D sparse correspondences provided by <a href="https://facebookresearch.github.io/projectaria_tools/docs/ARK/mps">MPS</a>.</p>
+
+<p><strong>Object-Scene Interactions</strong>:
+With the 3D object locations, we associate locations with the closest fixture. We manually verify assignments and find the accuracy is 98%. On average objects move between 1.8 different fixtures per video.</p>
+
+<h3 id="priming-object-movement">Priming Object Movement</h3>
+
+<p><img src="/assets/img/dataset/prime_figure.png" alt="image" width="960" loading="lazy" style="display: block; margin: auto; max-width: 100%; height: auto;" /></p>
+
+<p class="figcaption">Priming Object Interaction Through Gaze. Top: Camera position with projected eye-gaze and object positions in 3D. Middle: 2D gaze location. Bottom: Timeline for priming object movement e.g. the glass is primed 8.3s before taking</p>
+
+<p>We combine <strong>eye-gaze</strong> and <strong>3D object locations</strong> to detect when an object is <strong>primed</strong>. <strong>Pick-up priming</strong>: Gaze attends to an object <strong>before picking it up</strong>. <strong>Put-down priming</strong>: Gaze attends to the <strong>future location before placement</strong>.
+This <strong>Excludes objects taken/placed off-screen</strong>. <strong>94.8% of feasible objects</strong> are <strong>primed</strong> <strong>4.0s before pick-up</strong> and <strong>88.5% of feasible objects</strong> are <strong>primed</strong> <strong>2.6s before placement</strong>.</p>
+
+<p><strong>Long Term Object Tracking</strong>:
+We connect object movements and form longer trajectories, i.e. object itineraries, to capture sequences of an object’s movement. Our efficient pipeline utilises our lifted 3D locations and allows annotating a 1-hour long video in minute.</p>
+
+<h2 id="annotation-density-in-hd-epic">Annotation Density in HD-EPIC</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Annotation Type</th>
+      <th style="text-align: center">Total annotations</th>
+      <th style="text-align: center">Annotations/min</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Narrations</td>
+      <td style="text-align: center">59,454</td>
+      <td style="text-align: center">24.0</td>
+    </tr>
+    <tr>
+      <td>Parsing (Verbs + Nouns  + Hands + How + Why)</td>
+      <td style="text-align: center">303,968</td>
+      <td style="text-align: center">122.7</td>
+    </tr>
+    <tr>
+      <td>Recipes (Preps + Steps)</td>
+      <td style="text-align: center">2,489</td>
+      <td style="text-align: center">1.0</td>
+    </tr>
+    <tr>
+      <td>Sound</td>
+      <td style="text-align: center">50,968</td>
+      <td style="text-align: center">20.6</td>
+    </tr>
+    <tr>
+      <td>Action boundaries</td>
+      <td style="text-align: center">59,454</td>
+      <td style="text-align: center">24.0</td>
+    </tr>
+    <tr>
+      <td>Object Motion (Pick up + Put down  + Fixtures + Bboxes + Masks)</td>
+      <td style="text-align: center">153,480</td>
+      <td style="text-align: center">62.0</td>
+    </tr>
+    <tr>
+      <td>Object Itinerary</td>
+      <td style="text-align: center">4,881</td>
+      <td style="text-align: center">2.0</td>
+    </tr>
+    <tr>
+      <td>Object Priming (Starts + Ends)</td>
+      <td style="text-align: center">18,264</td>
+      <td style="text-align: center">7.4</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">263.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="vqa-benchmark">VQA Benchmark</h1>
+
+<h2 id="benchmark-creation">Benchmark creation</h2>
+
+<p>We construct a <strong>VQA benchmark</strong> leveraging the dense annotations in our dataset, covering <strong>7 key annotation types</strong>:</p>
+
+<h3 id="vqa-question-types"><strong>VQA Question Types</strong></h3>
+<ol>
+  <li><strong>Recipe</strong> – Identify, retrieve, and localize recipes and steps.</li>
+  <li><strong>Ingredient</strong> – Track ingredient usage, weight, timing, and order.</li>
+  <li><strong>Nutrition</strong> – Analyze ingredient nutrition and its evolution in recipes.</li>
+  <li><strong>Fine-Grained Action</strong> – Understand the <strong>what, how, and why</strong> of actions.</li>
+  <li><strong>3D Perception</strong> – Reason about object positions in <strong>3D space</strong>.</li>
+  <li><strong>Object Motion</strong> – Track object movements across <strong>long video sequences</strong>.</li>
+  <li><strong>Gaze</strong> – Estimate fixation points and anticipate future interactions.</li>
+</ol>
+
+<h3 id="benchmark-structure"><strong>Benchmark Structure</strong></h3>
+<ul>
+  <li><strong>5-way multiple choice</strong> for each question type</li>
+  <li><strong>30 question prototypes</strong>, generating <strong>26,650 multiple-choice questions</strong></li>
+  <li><strong>Hard negatives</strong> sampled from the dataset for increased difficulty</li>
+</ul>
+
+<h3 id="scalability--impact"><strong>Scalability &amp; Impact</strong></h3>
+<ul>
+  <li>One of the <strong>largest VQA video benchmarks</strong>, yet <strong>tractable for closed-source VLMs</strong></li>
+  <li>Estimated <strong>upper bound of 100,000 unique questions</strong> due to annotation density</li>
+</ul>
+
+<!-- We take the dense output of our annotation pipeline and construct a comprehensive VQA benchmark around 7 types of annotations:
+
+1. **Recipe**. Questions on temporally localising, retrieving, or recognising recipes and their steps.
+2. **Ingredient**. Questions on the ingredients used, their weight, their adding time and order.
+3. **Nutrition**. Questions on nutrition of ingredients and nutritional changes as ingredients are added to recipes.
+4. **Fine-grained action**. What, how, and why of actions and their temporal localisation.
+5. **3D perception**. Questions that require the understanding of relative positions of objects in the 3D scene.
+6. **Object motion**. Questions on where, when and how many times objects are moved across long videos.
+7. **Gaze**. Questions on estimating the fixation on large landmarks and anticipating future object interactions.
+
+For each question type, we define prototypes to sample questions, correct answers, and strong negatives from our annotations. Each question prototype is 5-way multiple choice. We generate hard negatives for prototypes by sampling within the dataset for difficult answers. In total, we have 30 prototypes, and generate 26,650 multiple-choice questions. This makes it one of the largest VQA video benchmarks, but keeps it tractable particularly to evaluate closed-source VLMs. Due to the density of our annotations, we estimate an upper bound of 100,000 possible unique questions with this set of prototypes. -->
+
+<p><br /></p>
+
+<p><img src="/assets/img/dataset/q_pie_with_dist.png" alt="image" width="800" loading="lazy" style="display: block; margin: auto; max-width: 100%; height: auto;" /></p>
+
+<p class="figcaption">VQA Question Prototypes. We show our 30 question prototypes by category alongside the number of questions. Outer bars indicate the distribution over input lengths for each question.</p>
+
+<h2 id="vlm-models">VLM models</h2>
+
+<p>We use 4 representative models as baselines:</p>
+<ul>
+  <li><a href="https://www.llama.com/llama-downloads">Llama 3.2 90B</a>. We use this as a strong open-source text-only baseline, as LLMs can perform well on visual QA benchmarks without any visual input.</li>
+  <li><a href="https://github.com/DAMO-NLP-SG/Video-LLaMA">VideoLlama 2 7B</a>. Strong open-source short context model.</li>
+  <li><a href="https://github.com/EvolvingLMMs-Lab/LongVA">LongVA</a>. Longest context open-source model.</li>
+  <li><a href="https://deepmind.google/technologies/gemini/pro/">Gemini Pro</a>. Closed source, longest context of any model, and state-of-the-art on long-video.</li>
+</ul>
+
+<!-- ## Results
+
+| Model                     | Recipe | Ingredient | Nutrition | Action |  3D  | Motion | Gaze | Avg. |
+|:--------------------------|:------:|:----------:|:---------:|:------:|:----:|:------:|:----:|:----:|
+| **Blind – language only** |        |            |           |        |      |        |      |      |
+| Llama 3.2                 |  28.4  |    26.8    |    26.7   |  23.3  | 26.6 |   24   | 19.2 |  25  |
+| Gemini Pro                |  29.5  |    31.2    |     23    |  22.1  | 30.5 |  25.3  | 22.7 | 26.3 |
+| **Video-Language**        |        |            |           |        |      |        |      |      |
+| VideoLlama 2              |   25   |    26.7    |     30    |  27.2  | 24.1 |  24.5  | 23.6 | 25.9 |
+| LongVA                    |   22   |     30     |     31    |  28.9  | 30.4 |  24.4  | 24.1 | 27.3 |
+| Gemini Pro                |  53.4  |     44     |     35    |  39.6  | 31.6 |   23   | 32.8 |  37  |
+{:.stretch-table}
+
+VQA Results per Category (% Acc.). Our VQA benchmark cannot be solved blind or by external knowledge and is a challenge for state-of-the-art video VLM models.
+{:.figcaption}
+
+The table above provides overall and per-category accuracy averaged over the prototype results. Both language-only models only achieve 25% and 26.3%, only 6.3% above random. Open-source video VLMs VideoLlama and LongVA perform similarly (25.9% and 27.3%) but have different strengths. For example, Llama is better at ordering ingredients, while the video is necessary to get above random performance on action recognition and gaze estimation. Gemini achieves the best performance, particularly for Recipe and Nutrition where external knowledge can be helpful. However, the average performance (37.0%) shows the challenge posed by our VQA benchmark.
+
+<br> -->
+
+<p><img src="/assets/img/dataset/results_per_prototype.png" alt="Full-width image" class="lead" width="1020" loading="lazy" /></p>
+
+<p class="figcaption">VQA Results per Question Prototype. Our benchmark contains many challenging questions for current models.</p>
+
+<p><img src="/assets/img/dataset/qual_res_v13.jpg" alt="Full-width image" class="lead" width="1020" loading="lazy" /></p>
+
+<p class="figcaption">VQA Qualitative Results. We mark ground truth answers with a green background, and predictions from different models, i.e., LLaMA 3.2, VideoLLaMA 2, LongVA, Gemini Pro, with coloured dots alongside the corresponding prediction.</p>
+
+<!-- ### Common Failures
+
+In Recipe, models struggle when steps have common objects or actions. In Ingredient, models guess weights (readable from the scale by humans) poorly, also causing errors in Nutrition. Fine-grained action is hard when answers share nouns. In Gaze, models just select recently moved objects. Confusion in 3D and Object motion occurs with directions (right/left) and fixtures (counters/drawers). -->
+
+<h1 id="download">Download</h1>
+
+<p>TBA</p>
+
+<h1 id="team">Team</h1>
+
+<table class="stretch-table">
+<tr>
+    <td style="background:transparent; text-align:center"><img class="logo-picture" src="/assets/img/bristol_logo.jpg" /></td>
+    <td style="background:transparent; text-align:center"><img class="logo-picture" src="/assets/img/leiden_logo.png" /></td>
+    <td style="background:transparent; text-align:center"><img class="logo-picture" src="/assets/img/sing_man_logo.png" /></td>
+    <td style="background:transparent; text-align:center"><img class="logo-picture" src="/assets/img/bath_logo.png" /></td>
+</tr>
+</table>
+
+<table class="stretch-table">
+<tr>
+    <td><img class="profile-picture" src="/assets/img/authors/toby.jpg" /></td>
+    <td><a href="https://tobyperrett.github.io/">Toby<br />Perrett</a></td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/ahmad.jpg" /></td>
+    <td><a href="https://ahmaddarkhalil.github.io">Ahmad<br />Darkhalil</a></td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/saptarshi.jpg" /></td>
+    <td><a href="https://sinhasaptarshi.github.io/">Saptarshi<br />Sinha</a></td>
+    <td>University of Bristol</td>
+</tr>
+<tr>
+    <td><img class="profile-picture" src="/assets/img/authors/omar.png" /></td>
+    <td><a href="https://omar-emara.github.io/">Omar<br />Emara</a></td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/sam.jpg" /></td>
+    <td><a href="https://sjpollard.github.io/">Sam<br />Pollard</a></td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/kranti.jpg" /></td>
+    <td><a href="https://krantiparida.github.io/">Kranti<br />Kumar Parida</a></td>
+    <td>University of Bristol</td>
+</tr>
+<tr>
+    <td><img class="profile-picture" src="/assets/img/authors/kaiting.jpg" /></td>
+    <td>Kaiting<br />Liu</td>
+    <td>Leiden University</td>
+    <td><img class="profile-picture" src="/assets/img/authors/prajwal.jpg" /></td>
+    <td><a href="https://prajwalgatti.github.io/">Prajwal<br />Gatti</a></td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/siddhant.jpg" /></td>
+    <td><a href="https://sid2697.github.io/">Siddhant<br />Bansal</a></td>
+    <td>University of Bristol</td>
+</tr>
+<tr>
+    <td><img class="profile-picture" src="/assets/img/authors/kevin.jpg" /></td>
+    <td>Kevin<br />Flanagan</td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/jacob.jpg" /></td>
+    <td><a href="https://jacobchalk.github.io/">Jacob<br />Chalk</a></td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/zhifan.jpg" /></td>
+    <td><a href="https://zhifanzhu.github.io/">Zhifan<br />Zhu</a></td>
+    <td>University of Bristol</td>
+</tr>
+<tr>
+    <td><img class="profile-picture" src="/assets/img/authors/rhodri.jpg" /></td>
+    <td>Rhodri<br />Guerrier</td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/fahd.jpg" /></td>
+    <td>Fahd<br />Abdelazim</td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/bin.jpg" /></td>
+    <td><a href="https://binzhubz.github.io/">Bin<br />Zhu</a></td>
+    <td>Singapore Management University</td>
+</tr>
+<tr>
+    <td><img class="profile-picture" src="/assets/img/authors/davide.jpg" /></td>
+    <td><a href="https://www.davidemoltisanti.com/research">Davide<br />Moltisanti</a></td>
+    <td>University of Bath</td>
+    <td><img class="profile-picture" src="/assets/img/authors/mike.jpg" /></td>
+    <td><a href="https://mwray.github.io/">Michael<br />Wray</a></td>
+    <td>University of Bristol</td>
+    <td><img class="profile-picture" src="/assets/img/authors/hazel.png" /></td>
+    <td><a href="https://hazeldoughty.github.io/">Hazel<br />Doughty</a></td>
+    <td>Leiden University</td>
+</tr>
+<tr>
+    <td></td><td></td><td></td>
+    <td><img class="profile-picture" src="/assets/img/authors/dima.jpg" /></td>
+    <td><a href="https://dimadamen.github.io/">Dima<br />Damen</a></td>
+    <td>University of Bristol</td>
+</tr>
+</table>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p>The project was supported by a uncharitable donation from Meta (Aria Project Partnership) to the University of Bristol. Gemini Pro results are supported by a research credits grant from Google DeepMind.</p>
+
+<p>Research at Bristol is supported by EPSRC Fellowship UMPIRE (EP/T004991/1), EPSRC Program Grant Visual AI (EP/T028572/1) and EPSRC Doctoral Training Program.</p>
+
+<p>Research at Leiden is supported by the Dutch Research Council. (NWO) under a Veni grant (VI.Veni.222.160).</p>
+
+<p>Research at Singapore is supported by Singapore Ministry of Education (MOE) Academic Research Fund (AcRF) Tier 1 grant (No. MSS23C018).</p>
+
+<p>We thank Rajan from Elancer and his team, for their huge assistance with temporal and audio annotation. We thank Srdjan Delic and his team for their assistance with mask annotations and object associations. We also thank Owen Tyley for the 3D Digital Twin of the kitchen environments using Blender. We thank David Fouhey and Evangelos Kazakos for early feedback on the project. We thank Pierre Moulon, Vijay Baiyya and Cheng Peng from the Aria team for technical assistance in using the MPS code and services.</p>
+
+<p>We acknowledge the usage of Ismbard AI Phase 1 and EPSRC Tier-2 Jade clusters.</p>
+
+</article>
+
+
+  <hr class="dingbat related mb6" />
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2024. All rights reserved.
+</small></p>
+  
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.2.1</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>(()=>{var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())})();
+</script>
+  <script src="/assets/js/hydejack-9.2.1.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.2.1.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+</div>
+
+
+</body>
+</html>
