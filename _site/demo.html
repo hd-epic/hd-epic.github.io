@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random YouTube Clip Matrix</title>
+<style>
+  #video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 3 rows */
+    gap: 10px; /* Adjust spacing between videos */
+  }
+
+  .video-container {
+    width: 100%; /* Make videos responsive within grid cells */
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust if needed) */
+    position: relative;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+</head>
+<body>
+
+<div id="video-grid"></div>
+
+<script>
+  const videos = [
+    { id: "YZo1sqXp5U0", duration: 396 }, // Example: 120 seconds
+    { id: "iJpqrt4Uefc", duration: 327 }, // Example: 180 seconds
+    { id: "I3ldXPd_d2g", duration: 120 },  // Example: 90 seconds
+    { id: "Q_h1jmcIBAw", duration: 120 },
+    { id: "Epjp1Isub4Q", duration: 120 },
+    { id: "1faxLHsp5ZI", duration: 120 },
+    { id: "Do_CbEBOFro", duration: 120 },
+    { id: "ozyqTW4FLFQ", duration: 120 },
+    { id: "x4STmay8sKI", duration: 120 },
+    { id: "HdDyqiLzT6g", duration: 120 },
+    { id: "PenWS6LTzDU", duration: 120 },
+    { id: "xR7ypKh8GUg", duration: 120 },
+    { id: "pgKE1TA8yKM", duration: 120 },
+    { id: "_iElNa-jFDE", duration: 120 },
+    { id: "kRWcAuVKtqc", duration: 120 },
+    { id: "wC7ZmDtzrl4", duration: 120 },
+    { id: "5nW8ksVP5yE", duration: 120 },
+    { id: "VFn2ir7RtAw", duration: 120 },
+    { id: "rSLV5Qx9l9s", duration: 120 },
+    { id: "ora_fTZr00A", duration: 120 },
+    { id: "7JqcpAM4EXU", duration: 120 },
+    { id: "1PDw8lZvUpY", duration: 120 },
+    { id: "06EGRDGFB64", duration: 120 },
+    { id: "09xxxPUCdUc", duration: 120 },
+    { id: "dVGiDRrddg4", duration: 120 },
+    { id: "0wakJgxehI4", duration: 120 },
+    { id: "qtPElCGYMHo", duration: 120 },
+    { id: "ClT-r2qMfDQ", duration: 120 },
+    { id: "QLMFiW0bm1Q", duration: 120 },
+    { id: "UYaRHCakTsU", duration: 120 },
+    { id: "DExH8Rq-bsk", duration: 120 },
+    { id: "8CgNOtu6rPA", duration: 120 },
+    { id: "aAbljb1FnWY", duration: 120 },
+    { id: "DuFatpo2zck", duration: 120 },
+    { id: "d6cer_Y681U", duration: 120 },
+    { id: "TS3XE9sALg8", duration: 120 },
+    { id: "EMGDuShuAaw", duration: 120 },
+    { id: "jlYpItmfW3k", duration: 120 },
+    { id: "RJK891ZzCIk", duration: 120 },
+    { id: "zWO833eWfag", duration: 120 },
+    { id: "UsXtkADcLW4", duration: 120 },
+    { id: "leeb_8o8mhk", duration: 120 },
+    { id: "bwDkI2vZ1Ow", duration: 120 },
+    { id: "-nTu0lrK7lg", duration: 120 },
+    { id: "MfVeyV6KHxM", duration: 120 },
+    { id: "cP3Ze_zk4jo", duration: 120 },
+    { id: "3VDExSVPRAM", duration: 120 },
+    { id: "xwD05cqaNI8", duration: 120 },
+    { id: "oF0kZUetsIc", duration: 120 },
+    { id: "ksIwSq7DgNk", duration: 120 },
+    { id: "MgEbPOsjl44", duration: 120 },
+    { id: "Wvm4Iti3HFg", duration: 120 },
+    { id: "uIFJOM3to-c", duration: 120 },
+    { id: "IGngQdnA7VM", duration: 120 },
+    { id: "OxlVOKg9L10", duration: 120 },
+    { id: "MtANW-VHeLc", duration: 120 },
+    { id: "NOsHm-8Kfe4", duration: 120 },
+    { id: "9EVtt2kjg-Y", duration: 120 },
+    { id: "dPv24tndzU4", duration: 120 },
+    { id: "_Oc6EP5-580", duration: 120 },
+    { id: "b6D-Jx7FSBI", duration: 120 },
+    { id: "raivW3uuNC8", duration: 120 },
+    { id: "MlPOnlO7RaM", duration: 120 },
+    { id: "MBRufovHQi8", duration: 120 },
+    { id: "I6tkXpYhVdY", duration: 120 },
+    { id: "lGKJgPs-Pjk", duration: 120 },
+    { id: "za_p9bd_Vkg", duration: 120 },
+    { id: "5BkqfOu30Ec", duration: 120 },
+    { id: "eeCKS_CzKzc", duration: 120 },
+    { id: "AS5nT9yMtbo", duration: 120 },
+    { id: "bk35JWOogGg", duration: 120 },
+    { id: "JwoPd_13Lko", duration: 120 },
+    { id: "Xvikr2gIsC4", duration: 120 },
+    { id: "kZTn1gaSf_0", duration: 120 },
+    { id: "hFzaq4tOR0Q", duration: 120 },
+    { id: "uZF5dt4hptU", duration: 120 },
+    { id: "yJBUr83vtX0", duration: 120 },
+    { id: "S7CG5gIxS5s", duration: 120 },
+    { id: "LWMOGzdnZGQ", duration: 120 },
+    { id: "0mviwgLRV5o", duration: 120 },
+    { id: "8PS08A42K9Q", duration: 120 },
+    { id: "3MjTHAjHO4E", duration: 120 },
+    { id: "8otKXM5Kj-k", duration: 120 }
+  ];
+
+  const gridContainer = document.getElementById("video-grid");
+  const numCycles = 5; // Number of times to change videos
+  let currentCycle = 0;
+
+  function playRandomClip(container) {
+    const randomIndex = Math.floor(Math.random() * videos.length);
+    const selectedVideo = videos[randomIndex];
+    const start = Math.floor(Math.random() * (selectedVideo.duration - 10));
+    const end = start + 10;
+
+    container.innerHTML = ""; // Clear previous video
+
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${selectedVideo.id}?start=${start}&end=${end}&autoplay=1&mute=1&loop=1&controls=0`; // mute and loop added
+    iframe.frameborder = "0";
+    iframe.allowfullscreen = true;
+
+    container.appendChild(iframe);
+  }
+    
+    function fillGrid() {
+    for (let i = 0; i < 6; i++) {
+      const videoContainer = document.createElement("div");
+      videoContainer.classList.add("video-container");
+      gridContainer.appendChild(videoContainer);
+      playRandomClip(videoContainer);
+    }
+  }
+
+  function cycleVideos() {
+    if (currentCycle < numCycles) {
+      gridContainer.innerHTML = ""; // Clear the grid
+      fillGrid(); // Fill with new random clips
+      currentCycle++;
+      setTimeout(cycleVideos, 10000); // Change every 10 seconds
+    } else {
+      // Optional: You can add a message or reset here
+      console.log("All cycles completed.");
+    }
+  }
+
+  fillGrid(); // Initial fill
+  setTimeout(cycleVideos, 10000); // Start cycling after 10 seconds (or immediately)
+
+</script>
+
+</body>
+</html>
