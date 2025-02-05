@@ -36,7 +36,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/hd-epic-logos-dark.png
+logo:                  /assets/img/logos-dark.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -48,6 +48,8 @@ author:
 
 # Add links to the sidebar.
 menu:
+  - title:             The Dataset
+    url:               /index#starthere 
   - title:             <a href="demo.html" target="_blank" class="sidebar-nav-item ">Explore Samples</a>
   - title:             <a href="https://youtu.be/xxlXweMXKsM" target="_blank" class="sidebar-nav-item ">Watch Video</a>
   - title:             VQA benchmark
