@@ -134,7 +134,7 @@ We connect object movements and form longer trajectories, i.e. object itinerarie
 |-----------------------------------------------------------------|:-----------------:|:---------------:|
 | Narrations                                                      |       59,454      |       24.0      |
 | Parsing (Verbs + Nouns  + Hands + How + Why)                    |      303,968      |      122.7      |
-| Recipes (Preps + Steps)                                         |       2,489       |       1.0       |
+| Recipes (Preps + Steps)                                         |       4,052       |       1.6       |
 | Sound                                                           |       50,968      |       20.6      |
 | Action boundaries                                               |       59,454      |       24.0      |
 | Object Motion (Pick up + Put down  + Fixtures + Bboxes + Masks) |      153,480      |       62.0      |
