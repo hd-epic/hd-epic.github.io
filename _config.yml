@@ -36,7 +36,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-# logo:                  /assets/img/logo.png
+logo:                  /assets/img/hd-epic-logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -48,9 +48,7 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Explore Samples
-    url:               demo.html
-    target:            _blank
+  - title:             <a href="demo.html" target="_blank" class="sidebar-nav-item ">Explore Samples</a>
   - title:             Watch Video
     url:               https://youtu.be/xxlXweMXKsM
     target:            _blank
@@ -86,12 +84,12 @@ paginate_path:         /:num/
 # ---------------------------------------------------------------------------------------
 
 # This will use the gem `jekyll-theme-hydejack`, as defined in the sibling `Gemfile`.
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 
 # You can uncomment `theme` above and replace it with `remote_theme` here iff you are using the 
 # `jekyll-remote-theme` plugin (which is the case when using the legacy GitHub Pages pipeline).
 # This will fetch the `v9` branch of the public Hydejack repository on GitHub.
-remote_theme: hydecorp/hydejack@v9
+# remote_theme: hydecorp/hydejack@v9
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
@@ -345,6 +343,7 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
+  - jekyll-target-blank
 
 
 # SEO Tag

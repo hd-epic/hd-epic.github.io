@@ -8,34 +8,6 @@ cover: true
 ---
 
 ![Full-width image](/assets/img/opening_loop_cropped.gif){:.lead width="1020" loading="lazy" loop}
-<!-- ![Full-width image](/assets/img/dataset/f1.jpg){:.lead width="1020" loading="lazy"} -->
-
-<!-- We introduce **HD-EPIC**, a **validation dataset** of newly collected, unscripted **kitchen-based egocentric videos** with **detailed 3D-grounded annotations**, covering:
-
-- **Recipe steps**  
-- **Fine-grained actions**  
-- **Ingredients with nutritional values**  
-- **Object movements**  
-- **Audio events**  
-
-### Key Features
-- **In-the-Wild Collection**: Unscripted recordings from **9 diverse home kitchens**.  
-- **Rich Annotations**: Matches the detail of controlled lab datasets.  
-- **Digital Twins**: 3D scene grounding of fixtures, object locations, and gaze.  
-
-<br>
-
-![Full-width image](/assets/img/dataset/f1.jpg){:.lead width="1020" loading="lazy"}
-
-### Dataset Statistics
-- **41 hours** of video across **9 kitchens**  
-- **404** digitally twinned kitchen fixtures  
-- **69** recipes  
-- **59K** fine-grained actions  
-- **51K** audio events  
-- **20K** object movements  
-- **37K** object masks (3D-lifted)  
-- **263 annotations per minute** on average   -->
 
 ![Full-width image](/assets/img/dataset/diversity.png){:.lead width="1020" loading="lazy"}
 Diversity in HD-EPIC, which is filmed over 3 days in-the-wild, resulting in many objects, activities and recipes.
