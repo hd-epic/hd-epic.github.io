@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Random YouTube Clip Matrix</title>
+<h1>HD-EPIC: A Highly-Detailed Egocentric Video Dataset</h1>
 <style>
   #video-grid {
     display: grid;
@@ -24,11 +24,71 @@
     width: 100%;
     height: 100%;
   }
+  #button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #instructions {
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #instructions h2 {
+    margin-top: 0;
+  }
+  #instructions a {
+  display: inline-block;
+  margin: 10px; /* Adds spacing between links */
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#instructions a:hover {
+  text-decoration: underline;
+}
+
 </style>
 </head>
 <body>
 
+<div id="instructions">
+  <h2>How to Use This Page</h2>
+  <p><strong>View Videos:</strong> The page initially loads a selection of six randomly chosen videos from the HD-EPIC dataset.</p>
+  <p><strong>Load More Videos:</strong> Click the <strong>"Next Set of Videos"</strong> button at the bottom of the screen to load a new set of six videos. Each click will load a fresh selection of clips.</p>
+  <p><strong>Links:</strong>
+    <a href="http://hd-epic.github.io/" target="_blank">HD-EPIC Dataset Page</a> 
+    <a href="http://hd-epic.github.io/" target="_blank">ArXiv</a>
+  </p>
+</div>
+
 <div id="video-grid"></div>
+
+<div id="button-container">
+  <button onclick="fillGrid()">Next Set of Videos</button>
+</div>
 
 <script>
   const videos = [
@@ -137,7 +197,8 @@
     container.appendChild(iframe);
   }
     
-    function fillGrid() {
+  function fillGrid() {
+    gridContainer.innerHTML = ""; // Clear existing videos
     for (let i = 0; i < 6; i++) {
       const videoContainer = document.createElement("div");
       videoContainer.classList.add("video-container");
@@ -146,21 +207,8 @@
     }
   }
 
-  function cycleVideos() {
-    if (currentCycle < numCycles) {
-      gridContainer.innerHTML = ""; // Clear the grid
-      fillGrid(); // Fill with new random clips
-      currentCycle++;
-      setTimeout(cycleVideos, 10000); // Change every 10 seconds
-    } else {
-      // Optional: You can add a message or reset here
-      console.log("All cycles completed.");
-    }
-  }
-
   fillGrid(); // Initial fill
-  setTimeout(cycleVideos, 10000); // Start cycling after 10 seconds (or immediately)
-
+  
 </script>
 
 </body>

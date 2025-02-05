@@ -50,8 +50,10 @@ author:
 menu:
   - title:             Explore Samples
     url:               demo.html
+    target:            _blank
   - title:             Watch Video
     url:               https://youtu.be/xxlXweMXKsM
+    target:            _blank
   - title:             VQA benchmark
     url:               /index#vqa-benchmark
   - title:             Download

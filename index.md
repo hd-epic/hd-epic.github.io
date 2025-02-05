@@ -274,7 +274,7 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 Cite our paper if you find the HD-EPIC dataset useful for your research:
 ```{bibliography}
 @article{perrett2025hdepic,
-  author    = {Toby Perrett and Ahmad Darkhalil and Saptarshi Sinha and Omar Emara and Sam Pollard and Kranti Parida and Kaiting Liu and Prajwal Gatti and Siddhant Bansal and Kevin Flanagan and Jacob Chalk and Zhifan Zhu and Rhodri Guerrier and Fahd Abdelazim and Bin Zhu and Davide Moltisanti and Michael Wray and Hazel Doughty and Dima Damen},
+  author    = {Perrett, Toby and Darkhalil, Ahmad and Sinha, Saptarshi and Emara, Omar and Pollard, Sam and Parida, Kranti and Liu, Kaiting and Gatti, Prajwal and Bansal, Siddhant and Flanagan, Kevin and Chalk, Jacob and Zhu, Zhifan and Guerrier, Rhodri and Abdelazim, Fahd and Zhu, Bin and Moltisanti, Davide and Wray, Michael and Doughty, Hazel and Damen, Dima},
   title     = {HD-EPIC: A Highly-Detailed Egocentric Video Dataset},
   journal   = {arXiv preprint},
   volume    = {arXiv:2502.XXXXX},
