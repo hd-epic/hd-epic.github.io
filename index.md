@@ -1,6 +1,6 @@
 ---
 layout: plain
-title: "HD-EPIC: A Highly-Detailed Egocentric Video Dataset"
+title: "<img src='/assets/img/hd-epic-logo-light.png' width='100'>HD-EPIC: A Highly-Detailed Egocentric Video Dataset"
 no_link_title: false 
 no_excerpt: false 
 hide_image: false
