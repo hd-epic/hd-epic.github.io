@@ -54,6 +54,7 @@ menu:
   - title:             <a href="https://youtu.be/xxlXweMXKsM" target="_blank" class="sidebar-nav-item ">Watch Video</a>
   - title:             VQA benchmark
     url:               /index#vqa-benchmark
+  - title:             <a href="vqa_demo.html" target="_blank" class="sidebar-nav-item ">Explore VQA</a>
   - title:             Download
     url:               /index#download
   - title:             Team
