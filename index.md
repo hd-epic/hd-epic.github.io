@@ -305,7 +305,7 @@ Cite our paper if you find the [HD-EPIC dataset](https://arxiv.org/abs/2502.0414
 </tr>
 <tr>
     <td><img class="profile-picture" src="/assets/img/authors/kevin.jpg"></td>
-    <td>Kevin<br>Flanagan</td>
+    <td><a href="https://keflanagan.github.io/">Kevin<br>Flanagan</a></td>
     <td>University of Bristol</td>
     <td><img class="profile-picture" src="/assets/img/authors/jacob.jpg"></td>
     <td><a href="https://jacobchalk.github.io/">Jacob<br>Chalk</a></td>
