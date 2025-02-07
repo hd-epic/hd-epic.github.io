@@ -1,6 +1,6 @@
 ---
 layout: plain
-title: "<img src='/assets/img/hd-epic-logo-light.png' width='100'>HD-EPIC: A Highly-Detailed Egocentric Video Dataset"
+title: "<img src='/assets/img/hd-epic-logo-light.png' style='float: left; width: 100px; margin-right:15px'>HD-EPIC: A Highly-Detailed Egocentric Video Dataset"
 no_link_title: false 
 no_excerpt: false 
 hide_image: false
@@ -237,6 +237,7 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 
 **Early Access Data available here**: <a href="https://uob-my.sharepoint.com/:f:/g/personal/xy23932_bristol_ac_uk/Er39VjjlqKJFkNXp_tYdDaYBKEPnxNSz9GQ-VvXFW-yWWQ?e=555IHx">OneDrive</a><br>
 **Download Annotations**: <a href="https://github.com/hd-epic/hd-epic-annotations">GitHub</a><br>
+**Paper**: <a href="https://arxiv.org/abs/2502.04144">arXiv</a><br>
 **Coming**:<br>
 - VRS files (soon)<br>
 - Object Associations<br>
@@ -244,13 +245,13 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 
 ## BibTeX
 
-Cite our paper if you find the HD-EPIC dataset useful for your research:
+Cite our paper if you find the [HD-EPIC dataset](https://arxiv.org/abs/2502.04144) useful for your research:
 ```{bibliography}
 @article{perrett2025hdepic,
   author    = {Perrett, Toby and Darkhalil, Ahmad and Sinha, Saptarshi and Emara, Omar and Pollard, Sam and Parida, Kranti and Liu, Kaiting and Gatti, Prajwal and Bansal, Siddhant and Flanagan, Kevin and Chalk, Jacob and Zhu, Zhifan and Guerrier, Rhodri and Abdelazim, Fahd and Zhu, Bin and Moltisanti, Davide and Wray, Michael and Doughty, Hazel and Damen, Dima},
   title     = {HD-EPIC: A Highly-Detailed Egocentric Video Dataset},
   journal   = {arXiv preprint},
-  volume    = {arXiv:2502.XXXXX},
+  volume    = {arXiv:2502.04144},
   year      = {2025},
   month     = {February},
 }
