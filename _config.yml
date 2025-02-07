@@ -48,7 +48,7 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             <a href="#" target="_blank" class="sidebar-nav-item ">Paper (ArXiv)</a>
+  - title:             <a href="https://arxiv.org/abs/2502.04144" target="_blank" class="sidebar-nav-item ">Paper (ArXiv)</a>
   - title:             The Dataset
     url:               /index#starthere 
   - title:             <a href="demo.html" target="_blank" class="sidebar-nav-item ">Explore Samples</a>
