@@ -243,6 +243,16 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 - Object Associations<br>
 - Object Masks<br>
 
+### ![image](/assets/img/copyright.png) Copyright
+
+All datasets and benchmarks on this page are copyright by us and published under the [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/) License. This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. You may not use the material for commercial purposes.
+
+For commercial licenses of EPIC-KITCHENS and any of its annotations, email us at [uob-epic-kitchens@bristol.ac.uk](mailto:uob-epic-kitchens@bristol.ac.uk).
+
+<h4>Disclaimer</h4>
+
+HD-EPIC dataset was collected as a tool for research in computer vision. The dataset may have unintended biases (including those of a societal, gender or racial nature).
+
 ## BibTeX
 
 Cite our paper if you find the [HD-EPIC dataset](https://arxiv.org/abs/2502.04144) useful for your research:
