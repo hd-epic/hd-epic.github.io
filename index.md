@@ -263,12 +263,12 @@ HD-EPIC dataset was collected as a tool for research in computer vision. The dat
 
 Cite our paper if you find the [HD-EPIC dataset](https://arxiv.org/abs/2502.04144) useful for your research:
 ```{bibliography}
-@article{perrett2025hdepic,
+@InProceedings{perrett2025hdepic,
   author    = {Perrett, Toby and Darkhalil, Ahmad and Sinha, Saptarshi and Emara, Omar and Pollard, Sam and Parida, Kranti and Liu, Kaiting and Gatti, Prajwal and Bansal, Siddhant and Flanagan, Kevin and Chalk, Jacob and Zhu, Zhifan and Guerrier, Rhodri and Abdelazim, Fahd and Zhu, Bin and Moltisanti, Davide and Wray, Michael and Doughty, Hazel and Damen, Dima},
   title     = {HD-EPIC: A Highly-Detailed Egocentric Video Dataset},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year      = {2025},
-  month     = {June},
+  month     = {June}
 }
 ```
 
