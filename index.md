@@ -9,6 +9,12 @@ cover: true
 
 ![Full-width image](/assets/img/opening_loop_cropped.gif){:.lead width="1020" loading="lazy" loop}
 
+## News
+
+- **[HD-EPIC](https://arxiv.org/abs/2502.04144)** accepted at **CVPR 2025**!
+
+<br>
+
 ![Full-width image](/assets/img/dataset/diversity.png){:.lead width="1020" loading="lazy"}
 Diversity in HD-EPIC, which is filmed over 3 days in-the-wild, resulting in many objects, activities and recipes.
 {:.figcaption}
@@ -260,10 +266,9 @@ Cite our paper if you find the [HD-EPIC dataset](https://arxiv.org/abs/2502.0414
 @article{perrett2025hdepic,
   author    = {Perrett, Toby and Darkhalil, Ahmad and Sinha, Saptarshi and Emara, Omar and Pollard, Sam and Parida, Kranti and Liu, Kaiting and Gatti, Prajwal and Bansal, Siddhant and Flanagan, Kevin and Chalk, Jacob and Zhu, Zhifan and Guerrier, Rhodri and Abdelazim, Fahd and Zhu, Bin and Moltisanti, Davide and Wray, Michael and Doughty, Hazel and Damen, Dima},
   title     = {HD-EPIC: A Highly-Detailed Egocentric Video Dataset},
-  journal   = {arXiv preprint},
-  volume    = {arXiv:2502.04144},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year      = {2025},
-  month     = {February},
+  month     = {June},
 }
 ```
 
