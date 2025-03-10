@@ -241,7 +241,7 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 
 # Download
 
-**Early Access Data available here**: <a href="https://uob-my.sharepoint.com/:f:/g/personal/xy23932_bristol_ac_uk/Er39VjjlqKJFkNXp_tYdDaYBKEPnxNSz9GQ-VvXFW-yWWQ?e=555IHx">OneDrive</a><br>
+**Early Access Data available here**: <a href="https://uob-my.sharepoint.com/:f:/g/personal/xy23932_bristol_ac_uk/Er39VjjlqKJFkNXp_tYdDaYBq-AOYKDouLM-Ph2X9M3Djw?e=v6EfVB">OneDrive</a><br>
 **Download Annotations**: <a href="https://github.com/hd-epic/hd-epic-annotations">GitHub</a><br>
 **Paper**: <a href="https://arxiv.org/abs/2502.04144">arXiv</a><br>
 **Coming**:<br>
