@@ -241,11 +241,20 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 
 # Download
 
-**Early Access Data available here**: <a href="https://uob-my.sharepoint.com/:f:/g/personal/xy23932_bristol_ac_uk/Er39VjjlqKJFkNXp_tYdDaYBq-AOYKDouLM-Ph2X9M3Djw?e=v6EfVB">OneDrive</a><br>
+<!-- **Early Access Data available here**: <a href="https://uob-my.sharepoint.com/:f:/g/personal/xy23932_bristol_ac_uk/Er39VjjlqKJFkNXp_tYdDaYBq-AOYKDouLM-Ph2X9M3Djw?e=v6EfVB">OneDrive</a><br> -->
+**Dataset Link**: <a href="https://data.bris.ac.uk/data/dataset/3cqb5b81wk2dc2379fx1mrxh47">Link</a>.<br>**Note**: The link above contains the following files:
+- Audio-HDF5: 27 GB
+- Digital-Twin: 1.35 GB
+- Hands-Masks: 1.95 GB
+- SLAM-and-Gaze: 349 GB
+- VRS: 1.9 TB
+- Videos (mp4): 115.5 GB
+
+VRS files consume large storage space, so, you can only download the videos.
+[This Github repo](https://github.com/epic-kitchens/epic-kitchens-download-scripts) is used for EPIC-KITCHENS but can be tailored if needed to download the dataset -- we do not offer a direct download script at the moment.<br>
 **Download Annotations**: <a href="https://github.com/hd-epic/hd-epic-annotations">GitHub</a><br>
 **Paper**: <a href="https://arxiv.org/abs/2502.04144">arXiv</a><br>
 **Coming**:<br>
-- VRS files (soon)<br>
 - Object Associations<br>
 - Object Masks<br>
 
