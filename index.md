@@ -11,7 +11,9 @@ cover: true
 
 ## News
 
-- **[HD-EPIC](https://arxiv.org/abs/2502.04144)** accepted at **CVPR 2025**!
+- **April 2025**: VQA Challenge Benchmark is online now! [Challenge link](https://codalab.lisn.upsaclay.fr/competitions/22006).
+- **April 2025**: Masks and object association annotations have now been released.
+- **Feb 2025**: **[HD-EPIC](https://arxiv.org/abs/2502.04144)** accepted at **CVPR 2025**!
 
 <br>
 
@@ -197,6 +199,13 @@ For each question type, we define prototypes to sample questions, correct answer
 VQA Question Prototypes. We show our 30 question prototypes by category alongside the number of questions. Outer bars indicate the distribution over input lengths for each question.
 {:.figcaption}
 
+### **VQA Challenge**
+
+We are hosting the **VQA Challenge** to evaluate the performance of VLMs on our benchmark. The challenge will be hosted on [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/22006) and will include a leaderboard for tracking progress. The challenge will be open to all participants, and we encourage everyone to submit their results.
+The challenge leaderboard closes on **19th May 2025**.
+
+The results with be announced in the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
+
 ## VLM models
 
 We use 4 representative models as baselines:
@@ -242,7 +251,7 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 # Download
 
 <!-- **Early Access Data available here**: <a href="https://uob-my.sharepoint.com/:f:/g/personal/xy23932_bristol_ac_uk/Er39VjjlqKJFkNXp_tYdDaYBq-AOYKDouLM-Ph2X9M3Djw?e=v6EfVB">OneDrive</a><br> -->
-**Dataset Link**: <a href="https://data.bris.ac.uk/data/dataset/3cqb5b81wk2dc2379fx1mrxh47">Link</a>.<br>**Note**: The link above contains the following files:
+**Dataset Link** (now updated with masks and associations): <a href="https://data.bris.ac.uk/data/dataset/3cqb5b81wk2dc2379fx1mrxh47">Link</a>.<br>**Note**: The link above contains the following files:
 - Audio-HDF5: 27 GB
 - Digital-Twin: 1.35 GB
 - Hands-Masks: 1.95 GB
@@ -254,9 +263,6 @@ VRS files consume large storage space, so, you can only download the videos.
 [This Github repo](https://github.com/epic-kitchens/epic-kitchens-download-scripts) is used for EPIC-KITCHENS but can be tailored if needed to download the dataset -- we do not offer a direct download script at the moment.<br>
 **Download Annotations**: <a href="https://github.com/hd-epic/hd-epic-annotations">GitHub</a><br>
 **Paper**: <a href="https://arxiv.org/abs/2502.04144">arXiv</a><br>
-**Coming**:<br>
-- Object Associations<br>
-- Object Masks<br>
 
 ### ![image](/assets/img/copyright.png) Copyright
 
