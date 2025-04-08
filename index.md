@@ -260,8 +260,9 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 - Videos (mp4): 115.5 GB
 
 VRS files consume large storage space, so, you can only download the videos.
-[This Github repo](https://github.com/epic-kitchens/epic-kitchens-download-scripts) is used for EPIC-KITCHENS but can be tailored if needed to download the dataset -- we do not offer a direct download script at the moment.<br>
-**Download Annotations**: <a href="https://github.com/hd-epic/hd-epic-annotations">GitHub</a><br>
+[This Github repo](https://github.com/hd-epic/hd-epic-downloader) offers a python script to download various parts of the dataset.<br>
+<!-- [This Github repo](https://github.com/epic-kitchens/epic-kitchens-download-scripts) is used for EPIC-KITCHENS but can be tailored if needed to download the dataset -- we do not offer a direct download script at the moment.<br> -->
+**Download Annotations**: <a href="https://github.com/hd-epic/hd-epic-annotations">GitHub</a>; [Download Tool](https://github.com/hd-epic/hd-epic-downloader)<br>
 **Paper**: <a href="https://arxiv.org/abs/2502.04144">arXiv</a><br>
 
 ### ![image](/assets/img/copyright.png) Copyright
