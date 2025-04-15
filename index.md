@@ -251,7 +251,11 @@ In Recipe, models struggle when steps have common objects or actions. In Ingredi
 # Download
 
 <!-- **Early Access Data available here**: <a href="https://uob-my.sharepoint.com/:f:/g/personal/xy23932_bristol_ac_uk/Er39VjjlqKJFkNXp_tYdDaYBq-AOYKDouLM-Ph2X9M3Djw?e=v6EfVB">OneDrive</a><br> -->
-**Dataset Link** (now updated with masks and associations): <a href="https://data.bris.ac.uk/data/dataset/3cqb5b81wk2dc2379fx1mrxh47">Link</a>.<br>**Note**: The link above contains the following files:
+**Dataset Link**: <a href="https://data.bris.ac.uk/data/dataset/3cqb5b81wk2dc2379fx1mrxh47">Link</a>.<br>
+
+**Alternate Download Link** (without VRS files): [OneDrive](https://uob-my.sharepoint.com/:f:/g/personal/xy23932_bristol_ac_uk/Er39VjjlqKJFkNXp_tYdDaYBq-AOYKDouLM-Ph2X9M3Djw?e=v6EfVB)
+
+**Note**: The link above contains the following files:
 - Audio-HDF5: 27 GB
 - Digital-Twin: 1.35 GB
 - Hands-Masks: 1.95 GB
