@@ -153,6 +153,8 @@ We connect object movements and form longer trajectories, i.e. object itinerarie
 
 # VQA Benchmark
 
+**VQA Challenge @ CVPR 2025**: Challenge link: [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/22006) <br> Deadline: **19th May 2025**. <br> Results will be announced at the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
+
 ## Benchmark creation
 
 We construct a **VQA benchmark** leveraging the dense annotations in our dataset, covering **7 key annotation types**:  
