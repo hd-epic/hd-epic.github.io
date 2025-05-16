@@ -153,7 +153,7 @@ We connect object movements and form longer trajectories, i.e. object itinerarie
 
 # VQA Benchmark
 
-**VQA Challenge @ CVPR 2025**: Challenge link: [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/22006) <br> Deadline: **19th May 2025**. <br> Results will be announced at the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
+**VQA Challenge @ CVPR 2025**: Challenge link: [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/22006) <br> Deadline: **27th May 2025**. <br> Results will be announced at the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
 
 ## Benchmark creation
 
@@ -204,7 +204,7 @@ VQA Question Prototypes. We show our 30 question prototypes by category alongsid
 ### **VQA Challenge**
 
 We are hosting the **VQA Challenge** to evaluate the performance of VLMs on our benchmark. The challenge will be hosted on [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/22006) and will include a leaderboard for tracking progress. The challenge will be open to all participants, and we encourage everyone to submit their results.
-The challenge leaderboard closes on **19th May 2025**.
+The challenge leaderboard closes on **27th May 2025**.
 
 The results with be announced in the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
 
