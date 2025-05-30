@@ -11,6 +11,7 @@ cover: true
 
 ## News
 
+- **May 2025**: Eye-Gaze Priming data has now been released! [Annotations link](https://github.com/hd-epic/hd-epic-annotations)
 - **April 2025**: VQA Challenge Benchmark is online now! [Challenge link](https://codalab.lisn.upsaclay.fr/competitions/22006).
 - **April 2025**: Masks and object association annotations have now been released.
 - **Feb 2025**: **[HD-EPIC](https://arxiv.org/abs/2502.04144)** accepted at **CVPR 2025**!
