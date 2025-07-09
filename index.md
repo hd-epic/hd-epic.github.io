@@ -11,6 +11,7 @@ cover: true
 
 ## News
 
+- **June 2025**: VQA Challenge results are announced! [Check here](#vqa-challenge).
 - **May 2025**: Eye-Gaze Priming data has now been released! [Annotations link](https://github.com/hd-epic/hd-epic-annotations)
 - **April 2025**: VQA Challenge Benchmark is online now! [Challenge link](https://codalab.lisn.upsaclay.fr/competitions/22006).
 - **April 2025**: Masks and object association annotations have now been released.
@@ -156,6 +157,9 @@ We connect object movements and form longer trajectories, i.e. object itinerarie
 
 **VQA Challenge @ CVPR 2025**: Challenge link: [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/22006) <br> Deadline: **27th May 2025**. The deadline to submit report is **30th May** (11:55 PM AoE).<br> Results will be announced at the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
 
+The VQA Challenge is closed now! Here are the winners of the challenge:
+![Full-width image](/assets/img/dataset/hd_epic_2025_winners.png){:.lead width="1020" loading="lazy"}
+
 ## Benchmark creation
 
 We construct a **VQA benchmark** leveraging the dense annotations in our dataset, covering **7 key annotation types**:  
@@ -208,6 +212,9 @@ We are hosting the **VQA Challenge** to evaluate the performance of VLMs on our 
 The challenge leaderboard closes on **27th May 2025**. The deadline to submit report is **30th May** (11:55 PM AoE).
 
 The results with be announced in the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
+
+The VQA Challenge is closed now! Here are the winners of the challenge:
+![Full-width image](/assets/img/dataset/hd_epic_2025_winners.png){:.lead width="1020" loading="lazy"}
 
 ## VLM models
 
