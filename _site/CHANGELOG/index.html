@@ -33,7 +33,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>CHANGELOG | HD-EPIC</title>
-<meta name="generator" content="Jekyll v4.4.1" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="CHANGELOG" />
 <meta name="author" content="<firstname> <lastname>" />
 <meta property="og:locale" content="en" />
@@ -117,7 +117,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-07-09T11:43:06+01:00',
+    INDEX_KEY: 'index--2025-07-30T13:03:59+01:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -139,7 +139,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 
   <style id="_pageStyle">
 
-html{--accent-color: rgb(237,50,62);--accent-color-faded: rgba(237, 50, 62, 0.5);--accent-color-highlight: rgba(237, 50, 62, 0.1);--accent-color-darkened: rgb(228.6715246637, 20.0784753363, 33.4641255605);--theme-color: rgb(45,44,45);--dark-mode-body-bg: hsl(300, 0.1404494382%, 17.5%);--dark-mode-border-color: hsl(300, 0.1404494382%, 22.5%)}
+html{--accent-color: rgb(237,50,62);--accent-color-faded: rgba(237, 50, 62, 0.5);--accent-color-highlight: rgba(237, 50, 62, 0.1);--accent-color-darkened: #e51421;--theme-color: rgb(45,44,45);--dark-mode-body-bg: hsl(300, 0.1404494382%, 17.5%);--dark-mode-border-color: hsl(300, 0.1404494382%, 22.5%)}
 </style>
 
 
@@ -594,7 +594,7 @@ html{--accent-color: rgb(237,50,62);--accent-color-faded: rgba(237, 50, 62, 0.5)
 
     <div class="language-js highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="c1">// file: 'hello-world.js'</span>
-<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello World!</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello World!</span><span class="dl">'</span><span class="p">);</span>
 </code></pre></div>    </div>
 
     <p>To add the headers, simply make the first line a comment of the form <code class="language-plaintext highlighter-rouge">file: "dir/filename.ext"</code>.</p>
@@ -614,7 +614,7 @@ See <a href="docs/basics.md#downloads">the docs</a> for more.</p>
     <div class="language-yml highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="c1"># file: "resume.md"</span>
 <span class="na">buttons</span><span class="pi">:</span>
-  <span class="na">print</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">print</span><span class="pi">:</span> <span class="no">true</span>
   <span class="na">pdf</span><span class="pi">:</span> <span class="s">/assets/Resume.pdf</span>
   <span class="na">vcf</span><span class="pi">:</span> <span class="s">http://h2vx.com/vcf/&lt;!--url--&gt;</span>
   <span class="na">json</span><span class="pi">:</span> <span class="s">/assets/resume.json</span>
@@ -1255,7 +1255,7 @@ When not set, will use <code class="language-plaintext highlighter-rouge">accent
     <div class="language-yml highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="c1"># file: `_config.yml`</span>
 <span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">cookies_banner</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">cookies_banner</span><span class="pi">:</span> <span class="no">true</span>
 </code></pre></div>    </div>
 
     <p>Enabling this setting will show a notice at the top of the page to new visitors.
@@ -1465,8 +1465,8 @@ have been moved under a common <code class="language-plaintext highlighter-rouge
 
     <div class="language-yml highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">no_push_state</span><span class="pi">:</span> <span class="kc">false</span>
-  <span class="na">no_drawer</span><span class="pi">:</span> <span class="kc">false</span>
+  <span class="na">no_push_state</span><span class="pi">:</span> <span class="no">false</span>
+  <span class="na">no_drawer</span><span class="pi">:</span> <span class="no">false</span>
 </code></pre></div>    </div>
   </li>
   <li>
@@ -1547,7 +1547,7 @@ You can use the <a href="https://search.google.com/structured-data/testing-tool/
 
     <div class="language-yml highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">no_structured_data</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">no_structured_data</span><span class="pi">:</span> <span class="no">true</span>
 </code></pre></div>    </div>
 
     <p>Note that this only applies to the resume and project layout, not the data generated by by <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code>
@@ -1607,7 +1607,7 @@ Create a file like <code class="language-plaintext highlighter-rouge">something.
     <div class="language-yml highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
 <span class="na">title</span><span class="pi">:</span> <span class="s">External</span>
-<span class="na">menu</span><span class="pi">:</span> <span class="kc">true</span>
+<span class="na">menu</span><span class="pi">:</span> <span class="no">true</span>
 <span class="na">redirect_to</span><span class="pi">:</span> <span class="s">https://example.com/</span>
 <span class="nn">---</span>
 </code></pre></div>    </div>
@@ -1645,7 +1645,7 @@ without having to worry about the output.</p>
   <span class="pi">-</span> <span class="na">scope</span><span class="pi">:</span>
       <span class="na">path</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
     <span class="na">values</span><span class="pi">:</span>
-      <span class="na">hide_description</span><span class="pi">:</span> <span class="kc">true</span>
+      <span class="na">hide_description</span><span class="pi">:</span> <span class="no">true</span>
 </code></pre></div>    </div>
   </li>
   <li>
@@ -1658,7 +1658,7 @@ For more on inlining CSS, <a href="https://varvy.com/pagespeed/inline-small-css.
 
     <div class="language-yml highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">no_inline_css</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">no_inline_css</span><span class="pi">:</span> <span class="no">true</span>
 </code></pre></div>    </div>
   </li>
   <li>
@@ -1703,7 +1703,7 @@ but it is less useful for content, like tables, long formulas or code.</p>
 
     <div class="language-yml highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">no_break_layout</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">no_break_layout</span><span class="pi">:</span> <span class="no">true</span>
 </code></pre></div>    </div>
   </li>
   <li>
