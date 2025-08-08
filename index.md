@@ -160,6 +160,15 @@ We connect object movements and form longer trajectories, i.e. object itinerarie
 The VQA Challenge is closed now! Here are the winners of the challenge:
 ![Full-width image](/assets/img/dataset/hd_epic_2025_winners.png){:.lead width="1020" loading="lazy"}
 
+### Winner Reports
+
+| Team Number | Report Link |
+|-------------|-------------|
+| 1 | [Team 1](/assets/reports/2025/HD-EPIC-R1.pdf) |
+| 2 | [Team 2](/assets/reports/2025/HD-EPIC-R2.pdf) |
+| 3 | [Team 3](/assets/reports/2025/HD-EPIC-R3.pdf) |
+
+
 ## Benchmark creation
 
 We construct a **VQA benchmark** leveraging the dense annotations in our dataset, covering **7 key annotation types**:  
