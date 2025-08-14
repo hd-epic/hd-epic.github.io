@@ -166,7 +166,7 @@ The VQA Challenge is closed now! Here are the winners of the challenge:
 |-------------|-------------|
 | 1 | [Team 1](/assets/reports/2025/HD-EPIC-R1.pdf) |
 | 2 | [Team 2](/assets/reports/2025/HD-EPIC-R2.pdf) |
-| 3 | Coming soon... |
+| 3 | [Team 3](/assets/reports/2025/HD-EPIC-R3.pdf) |
 
 
 ## Benchmark creation
