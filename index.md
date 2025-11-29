@@ -401,7 +401,7 @@ Cite our paper if you find the [HD-EPIC dataset](https://arxiv.org/abs/2502.0414
 
 ## Acknowledgements
 
-The project was supported by a uncharitable donation from Meta (Aria Project Partnership) to the University of Bristol. Gemini Pro results are supported by a research credits grant from Google DeepMind. 
+The project was supported by a unrestricted charitable donation from Meta (Aria Project Partnership) to the University of Bristol. Gemini Pro results are supported by a research credits grant from Google DeepMind. 
 
 Research at Bristol is supported by EPSRC Fellowship UMPIRE (EP/T004991/1), EPSRC Program Grant Visual AI (EP/T028572/1) and EPSRC Doctoral Training Program. 
 
