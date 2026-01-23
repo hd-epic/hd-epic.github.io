@@ -25,9 +25,9 @@ cover: true
 Diversity in HD-EPIC, which is filmed over 3 days in-the-wild, resulting in many objects, activities and recipes.
 {:.figcaption}
 
-## <span style="background:#d73a49; color:#fff; font-size:0.65em; font-weight:600; padding:0.15em 0.5em; border-radius:0.5em; margin-right:0.4em; vertical-align:middle;">New!</span> HD-EPIC Intermediate Data
+## <span style="background:#d73a49; color:#fff; font-size:0.65em; font-weight:600; padding:0.15em 0.5em; border-radius:0.5em; margin-right:0.4em; vertical-align:middle;">New!</span> Intermediate Data
 
-We have released **new intermediate data** for HD-EPIC, aligned to the released MP4 videos, providing per-video
+We have released **new intermediate data** for HD-EPIC, aligned to the MP4 videos, providing per-video
 **Aria glasses device calibration** and **frame-wise camera pose and gaze information**.
 
 **Includes:**
