@@ -516,15 +516,15 @@
                     </div>
                 </a>
 
-                <a href="https://epic-kitchens.github.io/epic-sounds" target="_blank" rel="noopener noreferrer" class="bento-card flex-col group cursor-pointer hover:border-purple-500/30">
+                <a href="https://epic-kitchens.github.io/epic-sounds" target="_blank" rel="noopener noreferrer" class="bento-card flex-col group cursor-pointer hover:border-purple-500/30 relative">
                     <div class="data-viewport h-[200px] w-full border-b border-white/5 relative">
                         <div class="viewport-badge text-purple-200 border-purple-500/30 bg-purple-900/60"><i class="ph-fill ph-speaker-high"></i> Audio Annotations</div>
                         
-                        <div id="vol-indicator" class="absolute bottom-3 right-3 z-30 bg-black/50 backdrop-blur-md border border-white/10 rounded-full p-2 transition-opacity opacity-0 pointer-events-none">
-                            <i id="vol-icon" class="ph-fill ph-speaker-slash text-white text-lg"></i>
+                        <div class="volume-btn absolute bottom-3 right-3 z-30 bg-black/60 backdrop-blur-md border border-white/10 rounded-full p-2.5 hover:bg-white/20 transition-all cursor-pointer flex items-center justify-center">
+                            <i class="vol-icon ph-fill ph-speaker-slash text-white text-lg"></i>
                         </div>
 
-                        <video muted loop playsinline class="data-video" data-audio="true" poster="media/epic_sounds.png" width="400" height="200" preload="auto">
+                        <video muted loop playsinline class="data-video" poster="media/epic_sounds.png" width="400" height="200" preload="none">
                             <source src="media/videos/epic_sounds.webm" type="video/webm">
                             <source src="media/videos/epic_sounds.mp4" type="video/mp4">
                         </video>
@@ -548,7 +548,7 @@
                             <div class="stat-pill"><span class="stat-pill-value">44</span><span class="stat-pill-label">Audio Classes</span></div>
                         </div>
 
-                        <div class="mt-3 flex flex-wrap gap-1.5">
+                        <div class="mt-3 flex flex-wrap gap-1.5 opacity-60 hover:opacity-100 transition-opacity">
                             <span class="text-[9px] uppercase tracking-wider text-purple-300/80 border border-purple-500/20 px-2 py-1 rounded">Audio-Based Recognition</span>
                             <span class="text-[9px] uppercase tracking-wider text-purple-300/80 border border-purple-500/20 px-2 py-1 rounded">Audio-Based Detection</span>
                         </div>
@@ -607,63 +607,58 @@
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
         document.addEventListener('DOMContentLoaded', () => {
-            const updateVolumeIcon = (card, isMuted) => {
-                const indicator = card.querySelector('#vol-indicator');
-                const icon = card.querySelector('#vol-icon');
-                if (indicator && icon) {
-                    if (isMuted) {
-                        icon.className = "ph-fill ph-speaker-slash text-white text-lg";
-                        indicator.style.opacity = '0';
-                    } else {
-                        icon.className = "ph-fill ph-speaker-high text-purple-400 text-lg";
-                        indicator.style.opacity = '1';
+            document.querySelectorAll('.volume-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault(); 
+                    e.stopPropagation();
+
+                    // Find the video sibling
+                    const wrapper = btn.closest('.data-viewport');
+                    const video = wrapper.querySelector('video');
+                    const icon = btn.querySelector('.vol-icon');
+
+                    if (video) {
+                        video.muted = !video.muted;
+                        
+                        if (video.muted) {
+                            icon.className = "vol-icon ph-fill ph-speaker-slash text-white text-lg";
+                        } else {
+                            icon.className = "vol-icon ph-fill ph-speaker-high text-purple-400 text-lg";
+                        }
                     }
-                }
-            };
-
-            document.querySelectorAll('.bento-card').forEach(card => {
-                const video = card.querySelector('video');
-                const hasAudio = video && video.hasAttribute('data-audio');
-                
-                if (isTouch && hasAudio) {    
-                    card.addEventListener('click', (e) => {
-                        if (!video.paused) {
-                            e.preventDefault(); 
-                            video.muted = !video.muted;
-                            updateVolumeIcon(card, video.muted);
-                        }
-                    });
-                }
-
-                if (!isTouch && video) {
-                    video.style.pointerEvents = 'none';
-                    
-                    card.addEventListener('mouseenter', () => {
-                        video.muted = true;
-                        
-                        const playPromise = video.play();
-                        
-                        if (playPromise !== undefined) {
-                            playPromise.then(() => {
-                                if (hasAudio) {
-                                    video.muted = false;
-                                    updateVolumeIcon(card, false);
-                                }
-                            }).catch(error => {
-                                console.log("Autoplay blocked:", error);
-                                video.muted = true;
-                                updateVolumeIcon(card, true);
-                            });
-                        }
-                    }, { passive: true });
-
-                    card.addEventListener('mouseleave', () => {
-                        video.pause();
-                        video.currentTime = 0; 
-                        updateVolumeIcon(card, true);
-                    }, { passive: true });
-                }
+                });
             });
+
+            if (!isTouch) {
+                document.querySelectorAll('.bento-card').forEach(card => {
+                    const video = card.querySelector('video');
+                    const gifImage = card.querySelector('.gif-player');
+
+                    if (video) {
+                        video.style.pointerEvents = 'none'; 
+                        
+                        card.addEventListener('mouseenter', () => {
+                            const playPromise = video.play();
+                            if (playPromise !== undefined) playPromise.catch(() => {});
+                        }, { passive: true });
+
+                        card.addEventListener('mouseleave', () => {
+                            video.pause();
+                        }, { passive: true });
+                    }
+
+                    if (gifImage) {
+                        const staticSrc = gifImage.src;
+                        const animatedSrc = gifImage.getAttribute('data-gif');
+                        card.addEventListener('mouseenter', () => {
+                            if (card.classList.contains('in-view') && animatedSrc) gifImage.src = animatedSrc;
+                        }, { passive: true });
+                        card.addEventListener('mouseleave', () => {
+                            if (staticSrc) gifImage.src = staticSrc;
+                        }, { passive: true });
+                    }
+                });
+            }
 
             const observerOptions = { 
                 root: null, 
@@ -680,10 +675,13 @@
                     if (entry.isIntersecting) {
                         card.classList.add('in-view');
                         
-                        if (video && video.preload !== 'auto') video.preload = 'auto';
+                        if (video && video.preload !== 'auto') {
+                            video.preload = 'auto';
+                        }
 
                         if (isTouch && video && video.paused) {
-                            video.muted = true;
+                            if(!video.muted) video.muted = true; 
+                            
                             const p = video.play();
                             if(p) p.catch(() => {});
                         }
@@ -707,7 +705,7 @@
             document.querySelectorAll('.bento-card').forEach(card => videoObserver.observe(card));
 
             // ==========================================
-            // ANIMATION LAYER (Background)
+            // BACKGROUND ANIMATION
             // ==========================================
             if (!prefersReducedMotion) {
                 const itemSettings = {
