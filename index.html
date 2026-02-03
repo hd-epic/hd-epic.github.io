@@ -602,8 +602,6 @@
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
         document.addEventListener('DOMContentLoaded', () => {
-            
-            // OPTIMISATION: RootMargin 50% ensures video buffers BEFORE it enters the viewport
             if (!isTouch) {
                 const observerOptions = { root: null, rootMargin: '50% 0px 50% 0px', threshold: 0 };
                 
@@ -614,7 +612,6 @@
                         
                         if (entry.isIntersecting) {
                             card.classList.add('in-view');
-                            // Start buffering aggressively when approaching viewport
                             if (video && video.preload !== 'auto') {
                                 video.preload = 'auto'; 
                             }
@@ -642,7 +639,6 @@
                                 playPromise = video.play();
                                 if (playPromise !== undefined) playPromise.catch(() => {});
                             } else if (video.paused) {
-                                // If not ready, load then play
                                 video.load();
                                 playPromise = video.play();
                                 if (playPromise !== undefined) playPromise.catch(() => {});
@@ -663,6 +659,7 @@
                         card.addEventListener('mouseleave', tryPause, { passive: true });
                     }
                     
+                    // Handle GIF swapping on hover for desktop
                     if (gifImage) {
                         const staticSrc = gifImage.src;
                         const animatedSrc = gifImage.getAttribute('data-gif');
@@ -675,6 +672,43 @@
                             if (staticSrc) gifImage.src = staticSrc;
                         }, { passive: true });
                     }
+                });
+            } 
+            else {
+                const mobileObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        const card = entry.target;
+                        const video = card.querySelector('video');
+                        const gifImage = card.querySelector('.gif-player');
+
+                        if (entry.isIntersecting) {
+                            // Play Video
+                            if (video) {
+                                const playPromise = video.play();
+                                if (playPromise !== undefined) playPromise.catch(() => {
+                                    // Auto-play was prevented (e.g. Low Power Mode)
+                                });
+                            }
+                            // Swap GIF
+                            if (gifImage && gifImage.getAttribute('data-gif')) {
+                                // Only swap if not already swapped
+                                if(!gifImage.src.includes(gifImage.getAttribute('data-gif'))) {
+                                    gifImage.src = gifImage.getAttribute('data-gif');
+                                }
+                            }
+                        } else {
+                            // Pause Video
+                            if (video && !video.paused) {
+                                video.pause();
+                            }
+                            // Optional: We don't revert GIFs on mobile scroll out 
+                            // to save bandwidth/performance, but you can if desired.
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                document.querySelectorAll('.bento-card').forEach(card => {
+                    mobileObserver.observe(card);
                 });
             }
 
@@ -732,7 +766,6 @@
                     let startOffset = 0;
                     let endOffset = 0;
                     
-                    // Caching dimensions to avoid layout thrashing
                     let winW = window.innerWidth;
                     let winH = window.innerHeight;
 
