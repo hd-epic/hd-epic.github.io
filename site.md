@@ -15,7 +15,7 @@ cover: true
 - **January 2026**: Frame-wise intermediate data has now been released! [Available here](https://uob-my.sharepoint.com/:f:/g/personal/jc17360_bristol_ac_uk/IgCCGb5qDbiOR7cmj1R9OyUWAXQFYL7FP_d0eMzB4ENPVQk?e=3hngWD).
 - **June 2025**: VQA Challenge results are announced! [Check here](#vqa-challenge).
 - **May 2025**: Eye-Gaze Priming data has now been released! [Annotations link](https://github.com/hd-epic/hd-epic-annotations)
-- **April 2025**: VQA Challenge Benchmark is online now! [Challenge link](https://codalab.lisn.upsaclay.fr/competitions/22006).
+- **April 2025**: VQA Challenge Benchmark is online now! [Challenge link](https://www.codabench.org/competitions/13645/).
 - **April 2025**: Masks and object association annotations have now been released.
 - **Feb 2025**: **[HD-EPIC](https://arxiv.org/abs/2502.04144)** accepted at **CVPR 2025**!
 
@@ -167,7 +167,7 @@ We connect object movements and form longer trajectories, i.e. object itinerarie
 
 # VQA Benchmark
 
-**VQA Challenge @ CVPR 2025**: Challenge link: [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/22006) <br> Deadline: **27th May 2025**. The deadline to submit report is **30th May** (11:55 PM AoE).<br> Results will be announced at the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
+**VQA Challenge @ CVPR 2025**: Challenge link: [Codabench](https://www.codabench.org/competitions/13645/) <br> Deadline: **27th May 2025**. The deadline to submit report is **30th May** (11:55 PM AoE).<br> Results will be announced at the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
 
 The VQA Challenge is closed now! Here are the winners of the challenge:
 ![Full-width image](/assets/img/dataset/hd_epic_2025_winners.png){:.lead width="1020" loading="lazy"}
@@ -229,7 +229,7 @@ VQA Question Prototypes. We show our 30 question prototypes by category alongsid
 
 ### **VQA Challenge**
 
-We are hosting the **VQA Challenge** to evaluate the performance of VLMs on our benchmark. The challenge will be hosted on [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/22006) and will include a leaderboard for tracking progress. The challenge will be open to all participants, and we encourage everyone to submit their results.
+We are hosting the **VQA Challenge** to evaluate the performance of VLMs on our benchmark. The challenge will be hosted on [Codabench](https://www.codabench.org/competitions/13645/) and will include a leaderboard for tracking progress. The challenge will be open to all participants, and we encourage everyone to submit their results.
 The challenge leaderboard closes on **27th May 2025**. The deadline to submit report is **30th May** (11:55 PM AoE).
 
 The results with be announced in the [Second Joint Egocentric Vision (EgoVis) Workshop](https://egovis.github.io/cvpr25) at CVPR 2025 on 12th June.
