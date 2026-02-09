@@ -15,10 +15,8 @@
       }
     };
 
-    // 1. Initial Load: Wait for everything (images, sidebar, etc.) to finish
     window.onload = fix;
 
-    // 2. Hydejack dynamic load: Run after the theme finishes a page transition
     document.addEventListener('hy-push-state-load', fix);
   })();
 </script>
