@@ -10,7 +10,7 @@
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
 # baseurl:               '/hydejack-starter-kit'
-baseurl: "site"
+
 
 # General settings
 # ---------------------------------------------------------------------------------------
@@ -36,9 +36,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /site/assets/img/logo-dark.png
-
-favicon: /site/assets/icons/favicon.ico
+logo:                  /assets/img/logo-dark.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -52,17 +50,17 @@ author:
 menu:
   - title:             <a href="https://arxiv.org/abs/2502.04144" target="_blank" class="sidebar-nav-item ">Paper (ArXiv)</a>
   - title:             The Dataset
-    url:               /site#starthere
-  - title: <a href="/site/demo.html" target="_blank" class="sidebar-nav-item">Explore Samples</a>
+    url:               /index#starthere 
+  - title:             <a href="demo.html" target="_blank" class="sidebar-nav-item ">Explore Samples</a>
   # - title:             <a href="https://github.com/hd-epic/hd-epic-annotations" target="_blank" class="sidebar-nav-item ">Download Annotations (GitHub)</a>
   - title:             <a href="https://youtu.be/xxlXweMXKsM" target="_blank" class="sidebar-nav-item ">Watch Video</a>
   - title:             VQA benchmark
-    url:               /site#vqa-benchmark
-  - title: <a href="/site/vqa_demo.html" target="_blank" class="sidebar-nav-item">Explore VQA</a>
+    url:               /index#vqa-benchmark
+  - title:             <a href="vqa_demo.html" target="_blank" class="sidebar-nav-item ">Explore VQA</a>
   - title:             Download
-    url:               /site#download
+    url:               /index#download
   - title:             Team
-    url:               /site#team
+    url:               /index#team
   
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -100,7 +98,7 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /site/assets/img/opening.gif
+accent_image:          /assets/img/opening.gif
 #accent_image:          none
 #accent_color:          rgb(79,177,186)
 accent_color:          rgb(237,50,62)
@@ -186,6 +184,9 @@ kramdown:
   math_engine:         katex
   math_engine_opts:    {}
   footnote_backlink:   '&#x21a9;&#xfe0e;'
+  
+ 
+
 
 # Hydejack Settings
 # ----------------------------------------------------------------------------------------
@@ -290,7 +291,7 @@ hydejack:
     enabled:           false
     cache_version:     13
     precache_assets:
-      - /site/assets/img/swipe.svg
+      - /assets/img/swipe.svg
 
 
 # Collections
@@ -415,21 +416,21 @@ jekyll_compose:
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /site/assets/img/sidebar-bg.jpg
+        path: /assets/img/sidebar-bg.jpg
     posts:
       layout: post
       description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /site/assets/img/sidebar-bg.jpg
+        path: /assets/img/sidebar-bg.jpg
     projects:
       layout: project
       description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /site/assets/img/sidebar-bg.jpg
+        path: /assets/img/sidebar-bg.jpg
       links:
         - title: Project Link
           url: https://example.com
