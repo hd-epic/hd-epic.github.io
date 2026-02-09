@@ -1,0 +1,25 @@
+<script>
+  (function() {
+    function rewriteLinks() {
+      // 1. Target the Logo and Title in the sidebar
+      const sidebarLinks = document.querySelectorAll('.sidebar-about a[href="/"]');
+      sidebarLinks.forEach(link => {
+        link.setAttribute('href', '/site');
+      });
+
+      // 2. Target the Breadcrumbs "home" link
+      const breadcrumbHome = document.querySelector('#breadcrumbs a[href="/"]');
+      if (breadcrumbHome) {
+        breadcrumbHome.setAttribute('href', '/site');
+        breadcrumbHome.textContent = 'site home'; // Optional: changes text from 'home' to 'site home'
+      }
+    }
+
+    // Run immediately
+    rewriteLinks();
+
+    // Run whenever the content changes (Hydejack dynamic loading)
+    const observer = new MutationObserver(rewriteLinks);
+    observer.observe(document.body, { childList: true, subtree: true });
+  })();
+</script>
