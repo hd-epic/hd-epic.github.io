@@ -1,22 +1,22 @@
 <script>
-  (function() {
-    var fix = function() {
-      // Sidebar Logo & Title
-      var sidebarLinks = document.querySelectorAll('.sidebar-about a[href="/"]');
-      for (var i = 0; i < sidebarLinks.length; i++) {
-        sidebarLinks[i].setAttribute('href', '/site');
-      }
+function fixHomeLinks() {
+  // Sidebar Logo & Title
+  var sidebarLinks = document.querySelectorAll('.sidebar-about a[href="/"]');
+  if (sidebarLinks) {
+    for (var i = 0; i < sidebarLinks.length; i++) {
+      sidebarLinks[i].setAttribute('href', '/site');
+    }
+  }
 
-      // Breadcrumbs
-      var bc = document.querySelector('#breadcrumbs a[href="/"]');
-      if (bc) {
-        bc.setAttribute('href', '/site');
-        bc.textContent = 'site';
-      }
-    };
+  // Breadcrumbs
+  var bc = document.querySelector('#breadcrumbs a[href="/"]');
+  if (bc) {
+    bc.setAttribute('href', '/site');
+    bc.textContent = 'site';
+  }
+}
 
-    window.onload = fix;
+window.addEventListener('load', fixHomeLinks);
 
-    document.addEventListener('hy-push-state-load', fix);
-  })();
+document.addEventListener('hy-push-state-load', fixHomeLinks);
 </script>
