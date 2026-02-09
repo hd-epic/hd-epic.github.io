@@ -1,25 +1,24 @@
 <script>
   (function() {
-    function rewriteLinks() {
-      // 1. Target the Logo and Title in the sidebar
-      const sidebarLinks = document.querySelectorAll('.sidebar-about a[href="/"]');
-      sidebarLinks.forEach(link => {
-        link.setAttribute('href', '/site');
-      });
-
-      // 2. Target the Breadcrumbs "home" link
-      const breadcrumbHome = document.querySelector('#breadcrumbs a[href="/"]');
-      if (breadcrumbHome) {
-        breadcrumbHome.setAttribute('href', '/site');
-        breadcrumbHome.textContent = 'site home'; // Optional: changes text from 'home' to 'site home'
+    var fix = function() {
+      // Sidebar Logo & Title
+      var sidebarLinks = document.querySelectorAll('.sidebar-about a[href="/"]');
+      for (var i = 0; i < sidebarLinks.length; i++) {
+        sidebarLinks[i].setAttribute('href', '/site');
       }
-    }
 
-    // Run immediately
-    rewriteLinks();
+      // Breadcrumbs
+      var bc = document.querySelector('#breadcrumbs a[href="/"]');
+      if (bc) {
+        bc.setAttribute('href', '/site');
+        bc.textContent = 'site';
+      }
+    };
 
-    // Run whenever the content changes (Hydejack dynamic loading)
-    const observer = new MutationObserver(rewriteLinks);
-    observer.observe(document.body, { childList: true, subtree: true });
+    // 1. Initial Load: Wait for everything (images, sidebar, etc.) to finish
+    window.onload = fix;
+
+    // 2. Hydejack dynamic load: Run after the theme finishes a page transition
+    document.addEventListener('hy-push-state-load', fix);
   })();
 </script>
