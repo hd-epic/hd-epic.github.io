@@ -1,7 +1,6 @@
 ---
 layout: plain
-title: "<img src='/site/assets/img/hd-epic-logo-light.png' style='float: left; width: 100px; margin-right:15px'>HD-EPIC: A Highly-Detailed Egocentric Video Dataset"
-permalink: /
+title: "<img src='/assets/img/hd-epic-logo-light.png' style='float: left; width: 100px; margin-right:15px'>HD-EPIC: A Highly-Detailed Egocentric Video Dataset"
 no_link_title: false 
 no_excerpt: false 
 hide_image: false
