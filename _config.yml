@@ -10,6 +10,8 @@
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
 # baseurl:               '/hydejack-starter-kit'
+url: https://hd-epic.github.io
+baseurl: ""
 
 
 # General settings
@@ -195,6 +197,8 @@ kramdown:
 # These settings are specific to Hydejack.
 
 hydejack:
+  home: /site/
+
   # Configure the order of complementary content on blog posts
   post_addons:         [about, newsletter, related, random, comments]
 
