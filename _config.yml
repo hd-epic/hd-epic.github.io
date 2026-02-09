@@ -51,17 +51,17 @@ author:
 menu:
   - title:             <a href="https://arxiv.org/abs/2502.04144" target="_blank" class="sidebar-nav-item ">Paper (ArXiv)</a>
   - title:             The Dataset
-    url:               /site#starthere
+    url:               /site/#starthere
   - title: <a href="/demo.html" target="_blank" class="sidebar-nav-item">Explore Samples</a>
   # - title:             <a href="https://github.com/hd-epic/hd-epic-annotations" target="_blank" class="sidebar-nav-item ">Download Annotations (GitHub)</a>
   - title:             <a href="https://youtu.be/xxlXweMXKsM" target="_blank" class="sidebar-nav-item ">Watch Video</a>
   - title:             VQA benchmark
-    url:               /site#vqa-benchmark
+    url:               /site/#vqa-benchmark
   - title: <a href="/vqa_demo.html" target="_blank" class="sidebar-nav-item">Explore VQA</a>
   - title:             Download
-    url:               /site#download
+    url:               /site/#download
   - title:             Team
-    url:               /site#team
+    url:               /site/#team
   
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
