@@ -1,26 +1,15 @@
 <script>
   function fixHome() {
-    // 1. Fix the Sidebar and Breadcrumb Links
     var a = document.querySelectorAll('.sidebar-about a[href="/"], #breadcrumbs a[href="/"]');
     for (var i = 0; i < a.length; i++) {
       a[i].setAttribute('href', '/site');
       if (a[i].parentElement.tagName === 'LI') a[i].textContent = 'Home';
     }
-
-    // 2. Fix the "site / site" issue
-    var bc = document.getElementById('breadcrumbs');
-    if (bc) {
-      var items = bc.querySelectorAll('li');
-      if (items.length > 1) {
-        for (var j = 1; j < items.length; j++) {
-          items[j].style.display = 'none';
-        }
-      }
-    }
   }
 
   setTimeout(function() {
     fixHome();
+    
     var ps = document.getElementById('_pushState');
     if (ps) {
       ps.addEventListener('hy-push-state-load', fixHome);
