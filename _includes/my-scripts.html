@@ -1,20 +1,25 @@
 <script>
-function fixHomeLinks() {
-  // Sidebar Logo & Title
-  var sidebarLinks = document.querySelectorAll('.sidebar-about a[href="/"]');
-  if (sidebarLinks) {
-    for (var i = 0; i < sidebarLinks.length; i++) {
-      sidebarLinks[i].setAttribute('href', '/site');
+    function fixHomeLinks() {
+        // 1. Sidebar Logo and Title links
+        var sidebarLinks = document.querySelectorAll('.sidebar-about a[href="/"]');
+        sidebarLinks.forEach(function(link) {
+            link.setAttribute('href', '/site');
+    });
+
+    // 2. Breadcrumbs 'home' link
+    var bc = document.querySelector('#breadcrumbs a[href="/"]');
+        if (bc) {
+            bc.setAttribute('href', '/site');
+            bc.textContent = 'site';
+        }
     }
-  }
 
-  // Breadcrumbs
-  var bc = document.querySelector('#breadcrumbs a[href="/"]');
-  if (bc) {
-    bc.setAttribute('href', '/site');
-    bc.textContent = 'site';
-  }
-}
+    // Handle Hydejack dynamic page loads (from docs)
+    var ps = document.getElementById('_pushState');
+    if (ps) {
+        ps.addEventListener('hy-push-state-load', fixHomeLinks);
+    }
 
-window.addEventListener('load', fixHomeLinks);
+    // Handle the very first initial page load
+    window.addEventListener('load', fixHomeLinks);
 </script>
