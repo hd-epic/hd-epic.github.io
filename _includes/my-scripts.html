@@ -4,10 +4,10 @@
         var sidebarLinks = document.querySelectorAll('.sidebar-about a[href="/"]');
         sidebarLinks.forEach(function(link) {
             link.setAttribute('href', '/site');
-    });
+        });
 
-    // 2. Breadcrumbs 'home' link
-    var bc = document.querySelector('#breadcrumbs a[href="/"]');
+        // 2. Breadcrumbs 'home' link
+        var bc = document.querySelector('#breadcrumbs a[href="/"]');
         if (bc) {
             bc.setAttribute('href', '/site');
             bc.textContent = 'site';
