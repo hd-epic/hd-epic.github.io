@@ -12,7 +12,7 @@ cover: true
 ## News
 
 
-- **January 2026**: Frame-wise intermediate data has now been released! [Available here](https://uob-my.sharepoint.com/:f:/g/personal/jc17360_bristol_ac_uk/IgCCGb5qDbiOR7cmj1R9OyUWAXQFYL7FP_d0eMzB4ENPVQk?e=jbICDb).
+- **January 2026**: Frame-wise intermediate data has now been released! [Available here](https://uob-my.sharepoint.com/:f:/g/personal/jc17360_bristol_ac_uk/IgCCGb5qDbiOR7cmj1R9OyUWAXQFYL7FP_d0eMzB4ENPVQk?e=3d3OT3IgCCGb5qDbiOR7cmj1R9OyUWAXQFYL7FP_d0eMzB4ENPVQk?e=jbICDb).
 - **June 2025**: VQA Challenge results are announced! [Check here](#vqa-challenge).
 - **May 2025**: Eye-Gaze Priming data has now been released! [Annotations link](https://github.com/hd-epic/hd-epic-annotations)
 - **April 2025**: VQA Challenge Benchmark is online now! [Challenge link](https://www.codabench.org/competitions/13645/).
