@@ -12,7 +12,7 @@ cover: true
 ## News
 
 
-- **January 2026**: Frame-wise intermediate data has now been released! [Available here](https://uob-my.sharepoint.com/:f:/g/personal/jc17360_bristol_ac_uk/IgCCGb5qDbiOR7cmj1R9OyUWAXQFYL7FP_d0eMzB4ENPVQk?e=g39ffU).
+- **January 2026**: Frame-wise intermediate data has now been released! [Available here](https://uob-my.sharepoint.com/:f:/g/personal/jc17360_bristol_ac_uk/IgCCGb5qDbiOR7cmj1R9OyUWAXQFYL7FP_d0eMzB4ENPVQk?e=RYfSIA).
 - **June 2025**: VQA Challenge results are announced! [Check here](#vqa-challenge).
 - **May 2025**: Eye-Gaze Priming data has now been released! [Annotations link](https://github.com/hd-epic/hd-epic-annotations)
 - **April 2025**: VQA Challenge Benchmark is online now! [Challenge link](https://www.codabench.org/competitions/13645/).
@@ -25,9 +25,9 @@ cover: true
 Diversity in HD-EPIC, which is filmed over 3 days in-the-wild, resulting in many objects, activities and recipes.
 {:.figcaption}
 
-## <span style="background:#d73a49; color:#fff; font-size:0.65em; font-weight:600; padding:0.15em 0.5em; border-radius:0.5em; margin-right:0.4em; vertical-align:middle;">New!</span> Intermediate Data
+## Intermediate Data
 
-We have released [**new intermediate data**](https://uob-my.sharepoint.com/:f:/g/personal/jc17360_bristol_ac_uk/IgCCGb5qDbiOR7cmj1R9OyUWAXQFYL7FP_d0eMzB4ENPVQk?e=g39ffU) for HD-EPIC, aligned to the MP4 videos, providing per-video **Aria glasses device calibration** and **frame-wise camera pose and gaze information**.
+We have released [**intermediate data**](https://uob-my.sharepoint.com/:f:/g/personal/jc17360_bristol_ac_uk/IgCCGb5qDbiOR7cmj1R9OyUWAXQFYL7FP_d0eMzB4ENPVQk?e=RYfSIA) for HD-EPIC, aligned to the MP4 videos, providing per-video **Aria glasses device calibration** and **frame-wise camera pose and gaze information**.
 
 **Includes:**
 - Per-video static device calibration (cameras and sensors), including sensor to device transforms
